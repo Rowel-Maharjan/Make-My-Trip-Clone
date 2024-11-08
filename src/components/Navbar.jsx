@@ -6,27 +6,27 @@ const NavbarIcons = [
     {
         name: "Hotels",
         pathname: "/hotels",
-        type1: "hotels"
+        type: "hotels"
     },
     {
         name: "Homestays & Villas",
         pathname: "/homestays",
-        type1: "homestay"
+        type: "homestay"
     },
     {
         name: "Holiday Packages",
         pathname: "/holidays",
-        type1: "holidays"
+        type: "holidays"
     },
     {
         name: "Buses",
         pathname: "/bus",
-        type1: "bus"
+        type: "bus"
     },
     {
         name: "Cabs",
         pathname: "/cabs",
-        type1: "cabs"
+        type: "cabs"
     },
 ]
 
@@ -34,9 +34,8 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const Icon = ({ type, pathname }) => {
-        return <span className={`icons icon-${type} mb-2 ${location.pathname === pathname && 'active'} `} />;
+        return <span className={`icons icon-${type} mb-2 ${location.pathname === pathname || (location.pathname === '/' && type === "hotels") && 'active'}`} />;
     };
-
 
     return (
         <>
@@ -45,20 +44,17 @@ const Navbar = () => {
                     <div
                         onClick={() => navigate(icons.pathname)}
                         key={icons.name}
-                        className={`flex relative flex-col items-center max-w-[65px] p-1 cursor-pointer h-[82px] ${location.pathname === icons.pathname ? "text-[#008cff] font-bold" : "text-[#4a4a4a] font-normal"} `}
+                        className={`flex relative flex-col items-center max-w-[65px] p-1 cursor-pointer h-[82px] ${location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? "text-[#008cff] font-bold" : "text-[#4a4a4a] font-normal"} `}
                     >
-                        <Icon type={icons.type1} pathname = {icons.pathname} /> {/* Consistent icon size */}
+                        <Icon type={icons.type} pathname={icons.pathname} /> {/* Consistent icon size */}
                         <span className="text-center leading-4 w-auto">
                             {icons.name}
                         </span>
-                        {location.pathname === icons.pathname && <div className='absolute h-[4px] w-full bg-[#008cff] left-0 -bottom-5  rounded-sm'></div>}
+                        {location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? <div className='absolute h-[4px] w-full bg-[#008cff] left-0 -bottom-5  rounded-sm'></div> : ""}
                     </div>
                 ))}
             </div>
-
         </>
-
-
     )
 }
 
