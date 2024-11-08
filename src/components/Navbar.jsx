@@ -1,73 +1,66 @@
 import React from 'react'
 import './Navbar.css'
-import { ChevronDown } from 'lucide-react';
+import { useLocation, useNavigate } from 'react-router-dom';
+
+const NavbarIcons = [
+    {
+        name: "Hotels",
+        pathname: "/hotels",
+        type1: "hotels"
+    },
+    {
+        name: "Homestays & Villas",
+        pathname: "/homestays",
+        type1: "homestay"
+    },
+    {
+        name: "Holiday Packages",
+        pathname: "/holidays",
+        type1: "holidays"
+    },
+    {
+        name: "Buses",
+        pathname: "/bus",
+        type1: "bus"
+    },
+    {
+        name: "Cabs",
+        pathname: "/cabs",
+        type1: "cabs"
+    },
+]
 
 const Navbar = () => {
-  const Icon = ({ type }) => {
-    return <span className={`icon icon-${type}`} />;
-  };
+    const navigate = useNavigate()
+    const location = useLocation()
+    const Icon = ({ type, pathname }) => {
+        return <span className={`icons icon-${type} mb-2 ${location.pathname === pathname && 'active'} `} />;
+    };
 
-  return (
-    <div className='flex text-white items-center justify-between' >
-      <img width={150} src="https://promos.makemytrip.com/Growth/Images/1x/mmt_dt_top_icon.png" alt="" />
-      <div className='flex gap-4'>
 
-        <div className='flex items-center gap-2 cursor-pointer'>
-          <Icon type="listYourProperty" />
-          <div className='flex flex-col text-[11px]' >
-            <div className='leading-3'>List Your Property</div>
-            <div className='text-gray-300 leading-3' >Grow your business</div>
-          </div>
-        </div>
-
-        <div className='flex items-center gap-2 cursor-pointer'>
-          <Icon type="myBizIcon" />
-          <div className='flex flex-col' >
-            <div className='text-[14px] font-bold leading-3'>Introducing myBiz</div>
-            <div className='text-[10px] font-normal leading-3'>Business Travel Solution</div>
-          </div>
-        </div>
-
-        <div className='flex items-center gap-2 cursor-pointer'>
-          <Icon type="myTripsIcon" />
-          <div className='flex flex-col' >
-            <div className='text-[11px] leading-3 font-bold'>My Trips</div>
-            <div className='text-[10px] font-normal leading-3'>Manage your bookings</div>
-          </div>
-        </div>
-
-        <div className='flex gap-2'>
-          <div className='flex items-center gap-2 bg-blue-500 py-2 pl-2 pr-3 rounded-md cursor-pointer'>
-            <Icon type="myIconWhite" />
-            <div className='flex w-40 items-center justify-between' >
-              <div className='text-[11px] leading-3'>Login or Create Account </div>
-              <span><ChevronDown size={16} strokeWidth={1.5} /></span>
+    return (
+        <>
+            <div className="flex gap-16 pt-2 pb-7 mx-10 mt-2 h-[100px] items-center">
+                {NavbarIcons.map((icons) => (
+                    <div
+                        onClick={() => navigate(icons.pathname)}
+                        key={icons.name}
+                        className={`flex relative flex-col items-center max-w-[65px] p-1 cursor-pointer h-[82px] ${location.pathname === icons.pathname ? "text-[#008cff] font-bold" : "text-[#4a4a4a] font-normal"} `}
+                    >
+                        <Icon type={icons.type1} pathname = {icons.pathname} /> {/* Consistent icon size */}
+                        <span className="text-center leading-4 w-auto">
+                            {icons.name}
+                        </span>
+                        {location.pathname === icons.pathname && <div className='absolute h-[4px] w-full bg-[#008cff] left-0 -bottom-5  rounded-sm'></div>}
+                    </div>
+                ))}
             </div>
-          </div>
+
+        </>
 
 
-          <div className='flex items-center gap-2 bg-[#ffffff26] py-2 pl-2 pr-3 rounded-md cursor-pointer'>
-            <div className='flex items-center gap-2' >
-              <div className='text-[11px] leading-3'>NEP | ENG </div>
-              <span><ChevronDown size={16} strokeWidth={1.5} /></span>
-            </div>
-          </div>
-
-
-          <div className='flex items-center gap-2 bg-[#ffffff26] py-2 pl-2 pr-3 rounded-md cursor-pointer'>
-            <div className='flex items-center gap-2' >
-              <div className='text-[11px] leading-3'>NPR </div>
-              <span><ChevronDown size={16} strokeWidth={1.5} /></span>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  )
+    )
 }
 
+// 008cff 
 export default Navbar
-
-
-

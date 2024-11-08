@@ -1,0 +1,29 @@
+.icon {
+    background-image: url('../assets/icons.png');
+    background-size: 200px 700px;
+    display: inline-block;
+}
+
+.icon-listYourProperty {
+    background-position: -78px -517px;
+    width: 32px;
+    height: 33px;
+}
+
+.icon-myBizIcon {
+    background-position: -98px -491px;
+    width: 44px;
+    height: 22px;
+}
+
+.icon-myTripsIcon {
+    background-position: -121px -30px;
+    width: 18px;
+    height: 25px;
+}
+
+.icon-myIconWhite {
+    background-position: -67px -489px;
+    width: 23px;
+    height: 22px;
+}

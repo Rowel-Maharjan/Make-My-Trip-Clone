@@ -1,33 +1,55 @@
-.icon {
-    background-image: url('../assets/icons.png');
-    background-size: 200px 700px;
+.icons {
+    background-image: url('../assets/NavbarIcons.png');
+    background-size: 260px 400px;
     display: inline-block;
 }
 
-.icon-listYourProperty {
-    background-position: -78px -517px;
-    width: 32px;
+.icon-hotels {
+    background-position: -60px 0px;
+    width: 36px;
+    height: 40px;
+}
+
+.icon-hotels.active {
+    background-position: -62px -41.5px;
+}
+
+.icon-homestay {
+    background-position: -57px -83px;
+    width: 44px;
+    height: 37px;
+}
+
+.icon-homestay.active {
+    background-position: -56px -121.5px;
+}
+
+.icon-holidays {
+    background-position: -109px -4px;
+    width: 42px;
     height: 33px;
 }
 
-.icon-myBizIcon {
-    background-position: -98px -491px;
-    width: 44px;
-    height: 22px;
+.icon-holidays.active {
+    background-position: -109px -44px;
 }
 
-.icon-myTripsIcon {
-    background-position: -121px -30px;
-    width: 18px;
-    height: 25px;
+.icon-bus {
+    background-position: -210.5px -2px;
+    width: 43px;
+    height: 36px;
 }
 
-.icon-myIconWhite {
-    background-position: -67px -489px;
-    width: 23px;
-    height: 22px;
+.icon-bus.active {
+    background-position: -209px -42px;
 }
 
 .icon-cabs {
-    background-position: -170px -10px;
+    background-position: -110px -82px;
+    width: 39px;
+    height: 37px;
+}
+
+.icon-cabs.active {
+    background-position: -110px -82px;
 }
