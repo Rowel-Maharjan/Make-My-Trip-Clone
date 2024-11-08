@@ -7,6 +7,8 @@ import Holidays from './components/Holidays'
 import Homestay from './components/Homestay'
 import Hotels from './components/Hotels'
 import Layout from './components/Layout'
+import React from 'react';
+
 
 function App() {
   return (
