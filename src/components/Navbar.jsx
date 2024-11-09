@@ -34,7 +34,8 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const Icon = ({ type, pathname }) => {
-        return <span className={`icons icon-${type} mb-2 ${location.pathname === pathname || (location.pathname === '/' && type === "hotels") && 'active'}`} />;
+        console.log(location.pathname, pathname, type)
+        return <span className={`icons icon-${type} mb-2 ${((location.pathname === pathname) || (location.pathname === '/' && type === "hotels")) && 'active'}`} />;
     };
 
     return (
@@ -46,7 +47,7 @@ const Navbar = () => {
                         key={icons.name}
                         className={`flex relative flex-col items-center max-w-[65px] p-1 cursor-pointer h-[82px] ${location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? "text-[#008cff] font-bold" : "text-[#4a4a4a] font-normal"} `}
                     >
-                        <Icon type={icons.type} pathname={icons.pathname} /> {/* Consistent icon size */}
+                        <Icon type={icons.type} pathname={icons.pathname} />
                         <span className="text-center leading-4 w-auto">
                             {icons.name}
                         </span>
