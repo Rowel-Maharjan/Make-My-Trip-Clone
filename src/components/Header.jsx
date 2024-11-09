@@ -37,7 +37,7 @@ const Header = () => {
         </div>
 
         <div className='flex gap-2'>
-          <div className='flex items-center gap-2 bg-blue-500 py-2 pl-2 pr-3 rounded-md cursor-pointer'>
+          <div className='flex items-center gap-2 bg-gradient-to-r from-[#53b2fe] to-[#065af3] py-2 pl-2 pr-3 rounded-md cursor-pointer'>
             <Icon type="myIconWhite" />
             <div className='flex w-40 items-center justify-between' >
               <div className='text-[11px] leading-3'>Login or Create Account </div>

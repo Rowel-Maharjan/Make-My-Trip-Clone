@@ -10,7 +10,7 @@ const Layout = () => {
                 <Header />
             </div>
             <div className='flex items-center mt-5 flex-col h-full '>
-                <div className='bg-white border rounded-xl flex items-center z-10'>
+                <div className='bg-white border rounded-xl flex items-center z-10 p-2'>
                     <Navbar />
                 </div>
                 <div className='w-10/12 absolute text-white top-36'>

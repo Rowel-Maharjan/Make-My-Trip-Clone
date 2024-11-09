@@ -40,12 +40,12 @@ const Navbar = () => {
 
     return (
         <>
-            <div className="flex gap-16 pt-2 pb-7 mx-10 mt-2 h-[100px] items-center">
+            <div className="flex gap-16 pt-2 pb-7 mx-10 mt-2 h-[87px] items-center">
                 {NavbarIcons.map((icons) => (
                     <div
                         onClick={() => navigate(icons.pathname)}
                         key={icons.name}
-                        className={`flex relative flex-col items-center max-w-[65px] p-1 cursor-pointer h-[82px] ${location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? "text-[#008cff] font-bold" : "text-[#4a4a4a] font-normal"} `}
+                        className={`flex relative flex-col items-center max-w-[65px] p-1 cursor-pointer h-[85px] ${location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? "text-[#008cff] font-bold" : "text-[#4a4a4a] font-normal"} `}
                     >
                         <Icon type={icons.type} pathname={icons.pathname} />
                         <span className="text-center leading-4 w-auto">

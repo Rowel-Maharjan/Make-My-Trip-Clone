@@ -7,7 +7,7 @@
 .icon-hotels {
     background-position: -60px 0px;
     width: 36px;
-    height: 40px;
+    height: 38px;
 }
 
 .icon-hotels.active {
@@ -17,7 +17,7 @@
 .icon-homestay {
     background-position: -57px -83px;
     width: 44px;
-    height: 37px;
+    height: 38px;
 }
 
 .icon-homestay.active {
@@ -27,7 +27,7 @@
 .icon-holidays {
     background-position: -109px -4px;
     width: 42px;
-    height: 33px;
+    height: 38px;
 }
 
 .icon-holidays.active {
@@ -37,7 +37,7 @@
 .icon-bus {
     background-position: -210.5px -2px;
     width: 43px;
-    height: 36px;
+    height: 38px;
 }
 
 .icon-bus.active {
@@ -47,7 +47,7 @@
 .icon-cabs {
     background-position: -110px -82px;
     width: 39px;
-    height: 37px;
+    height: 38px;
 }
 
 .icon-cabs.active {
