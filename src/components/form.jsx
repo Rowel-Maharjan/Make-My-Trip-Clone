@@ -23,7 +23,8 @@ const Form = ({ formValue }) => {
 
             {formValue.city &&
                 <>
-                    <span className='text-4xl font-bold'>{formValue.place}</span>
+                    <span className='text-4xl font-bold truncate'>{formValue.place}</span>
+                    <span className='text-[#4a4a4a] text-sm truncate'>{formValue.fullplacename}</span>
                     <span className='text-[#4a4a4a] text-sm'>{formValue.country}</span>
                 </>
             }
@@ -57,6 +58,7 @@ const Form = ({ formValue }) => {
                         <span className='font-bold text-4xl mr-1'>{formValue.hour}:{formValue.minute}</span>
                         <span className='text-xl'>{formValue.shift}</span>
                     </div>
+                    <div className='text-[12px] font-normal text-[#757575] italic'>{formValue.message}</div>
                 </>
             }
 
@@ -65,6 +67,15 @@ const Form = ({ formValue }) => {
                     <div className='text-[#757575] font-bold'>{formValue.message}</div>
                 </>
             }
+
+            {formValue.selectPackage &&
+                <>
+                    <div>
+                        <span className='font-bold text-4xl mr-1'>{formValue.distance}</span>
+                    </div>
+                </>
+            }
+
 
         </div>
     )
