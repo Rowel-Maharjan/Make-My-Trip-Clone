@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react'
 
 const Form = ({ formValue }) => {
     return (
-        <div className={`min-h-[${formValue.height}] ${formValue.width === "full"? 'w-full': `min-w-[${formValue.width}]` }  ${formValue.border && 'border-r border-[#e7e7e7]'} px-5 py-2 flex flex-col hover:bg-[#eaf5ff] cursor-pointer`}>
+        <div className={`${formValue.width === "full" ? 'flex-1' : ''} ${formValue.border && 'border-r border-[#e7e7e7]'} px-5 py-2 flex flex-col hover:bg-[#eaf5ff] cursor-pointer`} style={{ minWidth: formValue.width, minHeight: formValue.height }} >
 
             <div className='mb-1 text-[#4a4a4a] text-sm flex items-center'>
                 <span>{formValue.title}</span>

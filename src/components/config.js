@@ -1,3 +1,4 @@
+
 export const hotelRoomsInfo = [
     {
         id: "upto4rooms",
@@ -107,7 +108,7 @@ export const hotelGroupDeals = [
     {
         height: "90px",
         width: "full",
-        border: true,
+        border: false,
         title: "Rooms & Guests",
         ChevronDown: true,
         roomAndGuest: true,

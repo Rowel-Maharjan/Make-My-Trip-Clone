@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label'
@@ -44,6 +45,12 @@ const Hotels = () => {
           <div className='p-1 rounded-sm cursor-pointer bg-[#f2f2f2]'>London, United Kingdom</div>
           <div className='p-1 rounded-sm cursor-pointer bg-[#f2f2f2]'>Bangkok, Thailand</div>
         </div>
+        <p className='flex justify-center relative'>
+          {hotelActiveTab === "Upto 4 Rooms" &&
+            <button className='absolute -bottom-14 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>}
+          {hotelActiveTab === "Group Deals" &&
+            <button className='absolute -bottom-14 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>GET ME BEST PRICES</button>}
+        </p>
       </div>
     </>
   )
