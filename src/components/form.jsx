@@ -38,6 +38,15 @@ const Form = ({ formValue }) => {
                 </div>
             }
 
+            {formValue.guestAndChildren &&
+                <div>
+                    <span className='font-bold text-4xl'>{formValue.adults}</span>
+                    <span className='text-xl'>Adults</span>
+                    <span className='font-bold text-4xl'>{formValue.children}</span>
+                    <span className='text-xl'>Children</span>
+                </div>
+            }
+
             {formValue.price &&
                 <>
                     <span className='text-xl'>Rs.{formValue.lower}-Rs.{formValue.higher} </span>
