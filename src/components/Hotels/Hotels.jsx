@@ -25,8 +25,8 @@ const Hotels = () => {
             }
           </RadioGroup>
 
-          <div className='flex gap-2'>
-            <span>Book Domestic and International Property Online. To list your property</span>
+          <div className='flex gap-1'>
+            <span className='font-semibold'>Book Domestic and International Property Online. To list your property</span>
             <span className='text-blue-700 font-bold cursor-pointer'>Click Here</span>
           </div>
 

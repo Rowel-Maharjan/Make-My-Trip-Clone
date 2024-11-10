@@ -15,10 +15,9 @@ export const hotelRoomValue = [
         height: "90px",
         width: "385px",
         border: true,
-        title: "City, Property Name or Location",
+        title: "City, Property Name Or Location",
         ChevronDown: false,
         city: true,
-        title: "City, Property Name or Location",
         place: "Pokhara",
         country: "Nepal"
     },
@@ -74,10 +73,9 @@ export const hotelGroupDeals = [
         height: "90px",
         width: "385px",
         border: true,
-        title: "City, Property Name or Location",
+        title: "City, Property Name Or Location",
         ChevronDown: false,
         city: true,
-        title: "City, Property Name or Location",
         place: "Chitwan",
         country: "Nepal"
     },
@@ -122,10 +120,9 @@ export const homestayInfo = [
         height: "90px",
         width: "385px",
         border: true,
-        title: "City, Property Name or Location",
+        title: "City, Property Name Or Location",
         ChevronDown: false,
         city: true,
-        title: "City, Property Name or Location",
         place: "Lalitpur, Nepal",
         country: "Nepal"
     },
@@ -172,5 +169,41 @@ export const homestayInfo = [
         price: true,
         lower: 1500,
         higher: 2500
+    },
+]
+
+
+export const busInfo = [
+    {
+        height: "90px",
+        width: "483px",
+        border: true,
+        title: "From",
+        ChevronDown: false,
+        city: true,
+        place: "Thecho, Lalitpur",
+        country: "Nepal"
+    },
+    {
+        height: "90px",
+        width: "483px",
+        border: true,
+        title: "To",
+        ChevronDown: false,
+        city: true,
+        place: "Satdobato, Lalitpur",
+        country: "Nepal"
+    },
+    {
+        height: "90px",
+        width: "full",
+        border: false,
+        title: "Travel Date",
+        ChevronDown: true,
+        dateInfo: true,
+        date: 11,
+        month: "Nov",
+        year: 24,
+        day: "Monday"
     },
 ]

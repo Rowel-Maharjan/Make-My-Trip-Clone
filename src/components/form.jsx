@@ -32,7 +32,7 @@ const Form = ({ formValue }) => {
             {formValue.roomAndGuest &&
                 <div>
                     <span className='font-bold text-4xl'>{formValue.rooms}</span>
-                    <span className='text-xl'>Rooms </span>
+                    <span className='text-xl mr-1'>Rooms </span>
                     <span className='font-bold text-4xl'>{formValue.adults}</span>
                     <span className='text-xl'>Adults</span>
                 </div>
@@ -41,7 +41,7 @@ const Form = ({ formValue }) => {
             {formValue.guestAndChildren &&
                 <div>
                     <span className='font-bold text-4xl'>{formValue.adults}</span>
-                    <span className='text-xl'>Adults</span>
+                    <span className='text-xl mr-1'>Adults</span>
                     <span className='font-bold text-4xl'>{formValue.children}</span>
                     <span className='text-xl'>Children</span>
                 </div>
