@@ -34,13 +34,12 @@ const Navbar = () => {
     const navigate = useNavigate()
     const location = useLocation()
     const Icon = ({ type, pathname }) => {
-        console.log(location.pathname, pathname, type)
         return <span className={`icons icon-${type} mb-2 ${((location.pathname === pathname) || (location.pathname === '/' && type === "hotels")) && 'active'}`} />;
     };
 
     return (
         <>
-            <div className="flex gap-16 pt-2 pb-7 mx-10 mt-2 h-[87px] items-center">
+            <div className="flex gap-16 pt-2 pb-7 mx-10 mt-2 h-[80px] items-center">
                 {NavbarIcons.map((icons) => (
                     <div
                         onClick={() => navigate(icons.pathname)}
@@ -51,7 +50,7 @@ const Navbar = () => {
                         <span className="text-center leading-4 w-auto">
                             {icons.name}
                         </span>
-                        {location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? <div className='absolute h-[4px] w-full bg-[#008cff] left-0 -bottom-5  rounded-sm'></div> : ""}
+                        {location.pathname === icons.pathname || (location.pathname === '/' && icons.type === "hotels") ? <div className='absolute h-[4px] w-full bg-[#008cff] left-0 -bottom-[17px]  rounded-sm'></div> : ""}
                     </div>
                 ))}
             </div>

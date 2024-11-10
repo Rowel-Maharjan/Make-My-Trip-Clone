@@ -1,11 +1,11 @@
 import { Route, Routes } from 'react-router-dom'
 import './App.css'
-import Bus from './components/Bus'
-import Cabs from './components/Cabs'
+import Bus from './components/Bus/Bus'
+import Cabs from './components/Cabs/Cabs'
 import ErrorPage from './components/ErrorPage'
-import Holidays from './components/Holidays'
-import Homestay from './components/Homestay'
-import Hotels from './components/Hotels'
+import Holidays from './components/Holidays/Holidays'
+import Homestay from './components/Homestay/Homestay'
+import Hotels from './components/Hotels/Hotels'
 import Layout from './components/Layout'
 import React from 'react';
 
