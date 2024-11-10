@@ -1,6 +1,6 @@
 import React from 'react'
 import Form from '../form'
-import { homestayInfo } from '../config'
+import { homestayInfo } from './homestay.config'
 
 
 const Homestay = () => {

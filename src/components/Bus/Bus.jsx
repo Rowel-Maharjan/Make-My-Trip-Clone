@@ -1,6 +1,6 @@
 import React from 'react'
 import Form from '../form'
-import { busInfo } from '../config'
+import { busInfo } from './bus.config'
 
 const Bus = () => {
   return (

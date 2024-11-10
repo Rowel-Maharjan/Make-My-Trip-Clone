@@ -2,10 +2,10 @@
 import React, { useState } from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label'
-import { hotelRoomsInfo } from '../config'
+import { hotelRoomsInfo } from './hotel.config'
 import Form from '../form'
-import { hotelRoomValue } from '../config'
-import { hotelGroupDeals } from '../config'
+import { hotelRoomValue } from './hotel.config'
+import { hotelGroupDeals } from './hotel.config'
 
 const Hotels = () => {
   const [hotelActiveTab, setHotelActiveTab] = useState("Upto 4 Rooms")

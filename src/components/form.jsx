@@ -25,7 +25,6 @@ const Form = ({ formValue }) => {
                 <>
                     <span className='text-4xl font-bold'>{formValue.place}</span>
                     <span className='text-[#4a4a4a] text-sm'>{formValue.country}</span>
-
                 </>
             }
 
@@ -50,6 +49,20 @@ const Form = ({ formValue }) => {
             {formValue.price &&
                 <>
                     <span className='text-xl'>Rs.{formValue.lower}-Rs.{formValue.higher} </span>
+                </>
+            }
+            {formValue.pickupTime &&
+                <>
+                    <div>
+                        <span className='font-bold text-4xl mr-1'>{formValue.hour}:{formValue.minute}</span>
+                        <span className='text-xl'>{formValue.shift}</span>
+                    </div>
+                </>
+            }
+
+            {formValue.addReturnDate &&
+                <>
+                    <div className='text-[#757575] font-bold'>{formValue.message}</div>
                 </>
             }
 
