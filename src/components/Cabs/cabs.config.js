@@ -56,7 +56,7 @@ export const cabsOneWay = [
         border: true,
         title: "Return",
         ChevronDown: true,
-        addReturnDate: true,
+        messageShown: true,
         message: "Tap to add a return date for bigger discounts"
     },
     {

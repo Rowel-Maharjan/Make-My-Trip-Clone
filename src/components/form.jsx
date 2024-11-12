@@ -62,7 +62,7 @@ const Form = ({ formValue }) => {
                 </>
             }
 
-            {formValue.addReturnDate &&
+            {formValue.messageShown &&
                 <>
                     <div className='text-[#757575] font-bold'>{formValue.message}</div>
                 </>
