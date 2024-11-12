@@ -19,8 +19,8 @@ export const holidayInfo = [
         img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3891/Sangla_Ajay%20Jain.jpg"
     },
     {
-        id: "airindiaexpressholidays",
-        value: "Air India Express Holidays",
+        id: "airnepalexpressholidays",
+        value: "Air Nepal Express Holidays",
         img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/images.jpg"
     },
     {
@@ -85,3 +85,88 @@ export const searchInfo = [
         message: "Select Filters (Optional)"
     },
 ]
+
+export const HolidaysPlace = [
+    {
+        name: "Vietnam",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/trang an & mua cave.jpg"
+    },
+    {
+        name: "Thiland",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/Phuket.jpg"
+    },
+    {
+        name: "Bali",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/Pura-Ulun-Danu-Bratan,-Bali-Temple.jpg"
+    },
+    {
+        name: "View All",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/beach.jpeg"
+    },
+]
+
+export const HolidaysPlaceItems = ["Bhaktapur", "illam", "Jhapa", "Itahari", "Lalitpur", "Pokhara", "Dharan", "Chitwan", "China", "Bhutan"]
+
+export const CruisePlace = [
+    {
+        name: "Dubai",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/C1DX1650.jpg"
+    },
+    {
+        name: "Singapore",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/GDR_Aerial_7.jpg-l.jpg"
+    },
+    {
+        name: "View All",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/SingaporeRiversideNight.jpg"
+    }
+]
+
+export const CruisePlaceItems = ["2N Kuala Lumpur", "2N High Seas", "3N Penang", "3N Thailand", "3N Oman", "2N Qatar", "2N Abu Dhabi"]
+
+
+export const HoneyMoonPlace = [
+    {
+        name: "Maldives",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/CBH - Aerial - Coco Spa.jpg"
+    },
+    {
+        name: "Andaman",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1339/Romantic%20beach%20getaways.jpg?"
+    },
+    {
+        name: "Trip Finder",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/Cover.jpg"
+    },
+    {
+        name: "View All",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/MicrosoftTeams-image%20(18).png"
+    }
+]
+
+export const HoneyMoonItems = ["Thailand", "Malaysia", "Kerela", "Dubai", "Goa", "Bali", "North East", "Chitwan", "China", "Bhutan"]
+
+export const AirNepalExpress = ["Bhaktapur", "illam", "Jhapa", "Itahari", "Lalitpur", "Pokhara", "Dharan", "Chitwan", "China", "Bhutan"]
+
+
+export const LuxePlace = [
+    {
+        name: "Andaman",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1339/Romantic%20beach%20getaways.jpg?"
+    },
+    {
+        name: "Maldives",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/CBH - Aerial - Coco Spa.jpg"
+    },
+    {
+        name: "Thiland",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/Phuket.jpg"
+    },
+    {
+        name: "View All",
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/phonixImages/image (5).png"
+    }
+]
+
+export const LuxeItems = ["Bhaktapur", "illam", "Jhapa", "Itahari", "Lalitpur", "Pokhara", "Dharan", "Chitwan", "China", "Bhutan"]
+
