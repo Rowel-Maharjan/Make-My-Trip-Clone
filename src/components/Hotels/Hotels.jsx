@@ -16,6 +16,8 @@ const Hotels = () => {
     "city, property name or location": 'Pokhara',
     "check-in": new Date(),
     "check-out": new Date(),
+    "rooms & guests": "1Rooms 1Adults",
+    "price per night": "Rs.0 - Rs.1500",
     "value": "Hotel-upto4rooms"
   });
 
@@ -23,6 +25,7 @@ const Hotels = () => {
     "city, property name or location": 'Chitwan',
     "check-in": new Date(),
     "check-out": new Date(),
+    "rooms & guests": "1Rooms 1Adults",
     "value": "Hotel-groupDeals"
   });
 

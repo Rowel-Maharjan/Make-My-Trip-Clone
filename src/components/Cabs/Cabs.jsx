@@ -17,21 +17,31 @@ const Cabs = () => {
     "from": "Lalitpur",
     "to": "Kathmandu",
     "departure": new Date(),
+    "pickup-time": "12:00 AM",
+    "value": "cab-OneWay"
   });
   const [formDataRoundTrip, setFormDataRoundTrip] = useState({
     "from": "Lalitpur",
     "to": "Kathmandu",
     "departure": new Date(),
-    "return": new Date()
+    "return": new Date(),
+    "pickup-time": "12:00 AM",
+    "drop time": "12:00 AM",
+    "value": "Cab-RoundTrip"
   });
   const [formDataAirportTransfer, setFormDataAirportTransfer] = useState({
     "from": "Tribhuvan Internation Airport, Kathmandu",
     "to": "Pokhara International Airport, Pokhara",
     "departure": new Date(),
+    "pickup-time": "12:00 AM",
+    "value": "cab-AirportTransfer"
   });
   const [formDataHourlyRental, setFormDataHourlyRental] = useState({
     "pickup location": "Lalitpur",
     "pickup date": new Date(),
+    "pickup-time": "12:00 AM",
+    "select package": "1hrs 10kms",
+    "value": "cab-HourlyRental"
   });
 
   const onChangeHandlerOneWay = (title, value) => {
@@ -60,14 +70,14 @@ const Cabs = () => {
   };
 
   const onSubmit = () => {
-    if(cabActiveTab === "Outstation One-Way")
-      console.log(formDataOneWay); 
-    else if(cabActiveTab === "Outstation Round-Trip")
-      console.log(formDataRoundTrip); 
-    else if(cabActiveTab === "Airport Transfers")
+    if (cabActiveTab === "Outstation One-Way")
+      console.log(formDataOneWay);
+    else if (cabActiveTab === "Outstation Round-Trip")
+      console.log(formDataRoundTrip);
+    else if (cabActiveTab === "Airport Transfers")
       console.log(formDataAirportTransfer);
     else
-      console.log(formDataHourlyRental) 
+      console.log(formDataHourlyRental)
   };
   return (
     <>

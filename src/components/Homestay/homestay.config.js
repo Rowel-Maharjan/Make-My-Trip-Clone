@@ -33,8 +33,6 @@ export const homestayInfo = [
         title: "Rooms & Guests",
         ChevronDown: true,
         guestAndChildren: true,
-        adults: 2,
-        children: 2
     },
     {
         height: "90px",
@@ -43,7 +41,6 @@ export const homestayInfo = [
         title: "Price Per Night",
         ChevronDown: true,
         price: true,
-        lower: 1500,
-        higher: 2500
+        selectablePrices: ["Rs.0 - Rs.1500", "Rs.1500 - Rs.2500", "Rs.2500 - Rs.5000", "Rs.5000+"]
     },
 ]

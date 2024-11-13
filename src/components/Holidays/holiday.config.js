@@ -35,7 +35,7 @@ export const holidayInfo = [
 export const searchInfo = [
     {
         height: "90px",
-        width: "300px",
+        width: "350px",
         border: true,
         title: "From City",
         ChevronDown: false,
@@ -46,7 +46,7 @@ export const searchInfo = [
     },
     {
         height: "90px",
-        width: "300px",
+        width: "350px",
         border: true,
         title: "To City/Country/Category",
         ChevronDown: false,
@@ -58,7 +58,7 @@ export const searchInfo = [
     },
     {
         height: "90px",
-        width: "162px",
+        width: "192px",
         border: true,
         title: "Departure Date",
         ChevronDown: true,
@@ -66,22 +66,11 @@ export const searchInfo = [
     },
     {
         height: "90px",
-        width: "162px",
-        border: true,
+        width: "full",
+        border: false,
         title: "Rooms & Guests",
         ChevronDown: true,
         guestAndChildren: true,
-        adults: 2,
-        children: 1
-    },
-    {
-        height: "90px",
-        width: "full",
-        border: false,
-        title: "Filters",
-        ChevronDown: true,
-        messageShown: true,
-        message: "Select Filters (Optional)"
     },
 ]
 

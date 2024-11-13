@@ -12,6 +12,7 @@ const Holidays = () => {
     "from city": 'Lalitpur',
     "to city/country/category": 'Kathmandu',
     "departure date": new Date(),
+    "rooms & guests": "1Adults 0children",
     "value": "holidayPackage"
   });
 

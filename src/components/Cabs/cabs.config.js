@@ -55,9 +55,6 @@ export const cabsOneWay = [
         title: "Pickup-Time",
         ChevronDown: true,
         pickupTime: true,
-        hour: "10",
-        minute: "00",
-        shift: "AM"
     },
 
 ]
@@ -75,7 +72,7 @@ export const cabsRoundTrip = [
         selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
-        height: "90px",     
+        height: "90px",
         width: "250px",
         border: true,
         title: "To",
@@ -107,9 +104,6 @@ export const cabsRoundTrip = [
         title: "Pickup-Time",
         ChevronDown: true,
         pickupTime: true,
-        hour: "10",
-        minute: "20",
-        shift: "AM"
     },
     {
         height: "90px",
@@ -118,9 +112,6 @@ export const cabsRoundTrip = [
         title: "Drop Time",
         ChevronDown: true,
         pickupTime: true,
-        hour: "12",
-        minute: "20",
-        shift: "PM"
     },
 
 ]
@@ -161,9 +152,6 @@ export const cabsAirportTransfer = [
         title: "Pickup-Time",
         ChevronDown: true,
         pickupTime: true,
-        hour: "10",
-        minute: "20",
-        shift: "AM",
         message: "pick up time as per journey city timezone"
     },
 ]
@@ -195,9 +183,6 @@ export const cabsHourlyRentals = [
         title: "Pickup-Time",
         ChevronDown: true,
         pickupTime: true,
-        hour: "10",
-        minute: "20",
-        shift: "AM",
     },
     {
         height: "90px",
@@ -206,6 +191,6 @@ export const cabsHourlyRentals = [
         title: "Select Package",
         ChevronDown: true,
         selectPackage: true,
-        distance: "1hrs 10kms"
+        selectablePackages: ["1hrs 10kms", "2hrs 20kms", "3hrs 30kms", "4hrs 40kms", "5hrs 50kms", "6hrs 60kms", "7hrs 70kms"]
     },
 ]

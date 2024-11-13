@@ -55,8 +55,7 @@ export const hotelRoomValue = [
         title: "Price Per Night",
         ChevronDown: true,
         price: true,
-        lower: 1500,
-        higher: 2500
+        selectablePrices: ["Rs.0 - Rs.1500", "Rs.1500 - Rs.2500", "Rs.2500 - Rs.5000", "Rs.5000+"]
     },
 
 ]
@@ -96,8 +95,6 @@ export const hotelGroupDeals = [
         title: "Rooms & Guests",
         ChevronDown: true,
         roomAndGuest: true,
-        rooms: 2,
-        adults: 6
     },
 ]
 
