@@ -1,3 +1,4 @@
+// bus.config.js
 export const busInfo = [
     {
         height: "90px",
@@ -7,7 +8,8 @@ export const busInfo = [
         ChevronDown: false,
         city: true,
         place: "Thecho, Lalitpur",
-        country: "Nepal"
+        country: "Nepal",
+        selectablePlaces: ["Satdobato, Lalitpur", "Chabahil, Kathmandu", "Boudha, Kathmandu", "Thecho, Lalitpur", "Kathmandu, Nepal", "Pokhara, Nepal"],
     },
     {
         height: "90px",
@@ -17,18 +19,15 @@ export const busInfo = [
         ChevronDown: false,
         city: true,
         place: "Satdobato, Lalitpur",
-        country: "Nepal"
+        country: "Nepal",
+        selectablePlaces: ["Satdobato, Lalitpur", "Chabahil, Kathmandu", "Boudha, Kathmandu", "Thecho, Lalitpur", "Kathmandu, Nepal", "Pokhara, Nepal"],
     },
     {
         height: "90px",
         width: "full",
         border: false,
-        title: "Travel Date",
+        title: "Date",
         ChevronDown: true,
         dateInfo: true,
-        date: 11,
-        month: "Nov",
-        year: 24,
-        day: "Monday"
     },
-]
+];

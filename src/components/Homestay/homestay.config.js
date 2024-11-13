@@ -6,8 +6,9 @@ export const homestayInfo = [
         title: "City, Property Name Or Location",
         ChevronDown: false,
         city: true,
-        place: "Lalitpur, Nepal",
-        country: "Nepal"
+        place: "Lalitpur",
+        country: "Nepal",
+        selectablePlaces: ["Satdobato", "Chabahil", "Boudha", "Thecho", "Kathmandu", "Pokhara"],
     },
     {
         height: "90px",
@@ -16,10 +17,6 @@ export const homestayInfo = [
         title: "Check-In",
         ChevronDown: true,
         dateInfo: true,
-        date: 18,
-        month: "Feb",
-        year: 24,
-        day: "Wednesday"
     },
     {
         height: "90px",
@@ -28,10 +25,6 @@ export const homestayInfo = [
         title: "Check-Out",
         ChevronDown: true,
         dateInfo: true,
-        date: 16,
-        month: "Nov",
-        year: 24,
-        day: "Saturday"
     },
     {
         height: "90px",

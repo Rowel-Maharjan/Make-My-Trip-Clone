@@ -41,7 +41,8 @@ export const searchInfo = [
         ChevronDown: false,
         city: true,
         place: "Lalitpur",
-        country: "Nepal"
+        country: "Nepal",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
@@ -51,7 +52,9 @@ export const searchInfo = [
         ChevronDown: false,
         city: true,
         place: "Kathmandu",
-        country: "Nepal"
+        country: "Nepal",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
+
     },
     {
         height: "90px",
@@ -60,10 +63,6 @@ export const searchInfo = [
         title: "Departure Date",
         ChevronDown: true,
         dateInfo: true,
-        date: 5,
-        month: "Dec",
-        year: 2024,
-        day: "Thursday"
     },
     {
         height: "90px",

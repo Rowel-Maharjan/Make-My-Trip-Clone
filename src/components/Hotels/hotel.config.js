@@ -19,7 +19,8 @@ export const hotelRoomValue = [
         ChevronDown: false,
         city: true,
         place: "Pokhara",
-        country: "Nepal"
+        country: "Nepal",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
@@ -28,10 +29,6 @@ export const hotelRoomValue = [
         title: "Check-In",
         ChevronDown: true,
         dateInfo: true,
-        date: 11,
-        month: "Dec",
-        year: 24,
-        day: "Wednesday"
     },
     {
         height: "90px",
@@ -40,10 +37,6 @@ export const hotelRoomValue = [
         title: "Check-Out",
         ChevronDown: true,
         dateInfo: true,
-        date: 7,
-        month: "Jan",
-        year: 25,
-        day: "Tuesday"
     },
     {
         height: "90px",
@@ -77,7 +70,8 @@ export const hotelGroupDeals = [
         ChevronDown: false,
         city: true,
         place: "Chitwan",
-        country: "Nepal"
+        country: "Nepal",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
@@ -86,10 +80,6 @@ export const hotelGroupDeals = [
         title: "Check-In",
         ChevronDown: true,
         dateInfo: true,
-        date: 20,
-        month: "Dec",
-        year: 24,
-        day: "Wednesday"
     },
     {
         height: "90px",
@@ -98,10 +88,6 @@ export const hotelGroupDeals = [
         title: "Check-Out",
         ChevronDown: true,
         dateInfo: true,
-        date: 26,
-        month: "Jan",
-        year: 25,
-        day: "Tuesday"
     },
     {
         height: "90px",

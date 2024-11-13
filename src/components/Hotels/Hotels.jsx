@@ -6,9 +6,48 @@ import { hotelRoomsInfo } from './hotel.config'
 import Form from '../form'
 import { hotelRoomValue } from './hotel.config'
 import { hotelGroupDeals } from './hotel.config'
+import { useForm } from 'react-hook-form';
 
 const Hotels = () => {
+  const { handleSubmit } = useForm();
   const [hotelActiveTab, setHotelActiveTab] = useState("Upto 4 Rooms")
+
+  const [formDataA, setFormDataA] = useState({
+    "city, property name or location": 'Pokhara',
+    "check-in": new Date(),
+    "check-out": new Date(),
+    "value": "Hotel-upto4rooms"
+  });
+
+  const [formDataB, setFormDataB] = useState({
+    "city, property name or location": 'Chitwan',
+    "check-in": new Date(),
+    "check-out": new Date(),
+    "value": "Hotel-groupDeals"
+  });
+
+  const onChangeHandlerA = (title, value) => {
+    setFormDataA((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+
+  const onChangeHandlerB = (title, value) => {
+    setFormDataB((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+
+  const onSubmit = () => {
+
+    if (hotelActiveTab === "Upto 4 Rooms")
+      console.log(formDataA); // Here, we can access the form data
+    else
+      console.log(formDataB)
+  };
+
   return (
     <>
       <div className='w-[1200px] relative bg-white py-16 px-5 -top-12 rounded-xl mb-11 shadow-2xl'>
@@ -36,13 +75,13 @@ const Hotels = () => {
         {/* Content Box  */}
         {hotelActiveTab === "Upto 4 Rooms" && (
           <div className='w-full border rounded-lg mb-5 flex border-[#e7e7e7]' >
-            {hotelRoomValue.map(roomValue => <Form key={roomValue.title} formValue={roomValue} />)}
+            {hotelRoomValue.map(roomValue => <Form onChangeHandler={onChangeHandlerA} key={roomValue.title} formValue={roomValue} />)}
           </div>
         )}
 
         {hotelActiveTab === "Group Deals" && (
           <div className='w-full border rounded-lg mb-5 flex border-[#e7e7e7]'>
-            {hotelGroupDeals.map(roomValue => <Form key={roomValue.title} formValue={roomValue} />)}
+            {hotelGroupDeals.map(roomValue => <Form onChangeHandler={onChangeHandlerB} key={roomValue.title} formValue={roomValue} />)}
           </div>
         )}
 
@@ -54,9 +93,9 @@ const Hotels = () => {
         </div>
         <p className='flex justify-center relative'>
           {hotelActiveTab === "Upto 4 Rooms" &&
-            <button className='absolute -bottom-16 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>}
+            <button onClick={handleSubmit(onSubmit)} className='absolute -bottom-16 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>}
           {hotelActiveTab === "Group Deals" &&
-            <button className='absolute -bottom-16 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>GET ME BEST PRICES</button>}
+            <button onClick={handleSubmit(onSubmit)} className='absolute -bottom-16 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>GET ME BEST PRICES</button>}
         </p>
       </div>
       <div className='w-[1200px] h-80  relative bg-white py-16 px-5 -top-12 rounded-xl shadow-2xl'>

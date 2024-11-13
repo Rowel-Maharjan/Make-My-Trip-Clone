@@ -7,9 +7,68 @@ import { cabsOneWay } from './cabs.config'
 import { cabsRoundTrip } from './cabs.config'
 import { cabsAirportTransfer } from './cabs.config'
 import { cabsHourlyRentals } from './cabs.config'
+import { useForm } from 'react-hook-form';
 
 const Cabs = () => {
   const [cabActiveTab, setcabActiveTab] = useState("Outstation One-Way")
+  const { handleSubmit } = useForm();
+
+  const [formDataOneWay, setFormDataOneWay] = useState({
+    "from": "Lalitpur",
+    "to": "Kathmandu",
+    "departure": new Date(),
+  });
+  const [formDataRoundTrip, setFormDataRoundTrip] = useState({
+    "from": "Lalitpur",
+    "to": "Kathmandu",
+    "departure": new Date(),
+    "return": new Date()
+  });
+  const [formDataAirportTransfer, setFormDataAirportTransfer] = useState({
+    "from": "Tribhuvan Internation Airport, Kathmandu",
+    "to": "Pokhara International Airport, Pokhara",
+    "departure": new Date(),
+  });
+  const [formDataHourlyRental, setFormDataHourlyRental] = useState({
+    "pickup location": "Lalitpur",
+    "pickup date": new Date(),
+  });
+
+  const onChangeHandlerOneWay = (title, value) => {
+    setFormDataOneWay((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+  const onChangeHandlerRoundTrip = (title, value) => {
+    setFormDataRoundTrip((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+  const onChangeHandlerAirportTransfer = (title, value) => {
+    setFormDataAirportTransfer((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+  const onChangeHandlerHourlyRental = (title, value) => {
+    setFormDataHourlyRental((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+
+  const onSubmit = () => {
+    if(cabActiveTab === "Outstation One-Way")
+      console.log(formDataOneWay); 
+    else if(cabActiveTab === "Outstation Round-Trip")
+      console.log(formDataRoundTrip); 
+    else if(cabActiveTab === "Airport Transfers")
+      console.log(formDataAirportTransfer);
+    else
+      console.log(formDataHourlyRental) 
+  };
   return (
     <>
       <div className='w-[1200px] relative bg-white pt-16 pb-10 px-5 -top-12 rounded-xl mb-11 shadow-2xl'>
@@ -32,7 +91,7 @@ const Cabs = () => {
 
         {cabActiveTab === "Outstation One-Way" && (<>
           <div className='w-full border relative rounded-lg mb-5 flex border-[#e7e7e7]' >
-            {cabsOneWay.map(cabValue => <Form key={cabValue.title} formValue={cabValue} />)}
+            {cabsOneWay.map(cabValue => <Form onChangeHandler={onChangeHandlerOneWay} key={cabValue.title} formValue={cabValue} />)}
           </div>
           <div className='text-[#008cff] font-bold cursor-pointer ml-5' >+ Add Stops</div>
         </>
@@ -40,7 +99,7 @@ const Cabs = () => {
 
         {cabActiveTab === "Outstation Round-Trip" && (<>
           <div className='w-full border rounded-lg mb-5 flex border-[#e7e7e7]' >
-            {cabsRoundTrip.map(cabValue => <Form key={cabValue.title} formValue={cabValue} />)}
+            {cabsRoundTrip.map(cabValue => <Form onChangeHandler={onChangeHandlerRoundTrip} key={cabValue.title} formValue={cabValue} />)}
           </div>
           <div className='text-[#008cff] font-bold cursor-pointer ml-5' >+ Add Stops</div>
         </>
@@ -48,7 +107,7 @@ const Cabs = () => {
 
         {cabActiveTab === "Airport Transfers" && (<>
           <div className='w-full border rounded-lg mb-5 flex border-[#e7e7e7]' >
-            {cabsAirportTransfer.map(cabValue => <Form key={cabValue.title} formValue={cabValue} />)}
+            {cabsAirportTransfer.map(cabValue => <Form onChangeHandler={onChangeHandlerAirportTransfer} key={cabValue.title} formValue={cabValue} />)}
           </div>
         </>
         )}
@@ -56,14 +115,14 @@ const Cabs = () => {
 
         {cabActiveTab === "Hourly Rentals" && (<>
           <div className='w-full border rounded-lg mb-5 flex border-[#e7e7e7]' >
-            {cabsHourlyRentals.map(cabValue => <Form key={cabValue.title} formValue={cabValue} />)}
+            {cabsHourlyRentals.map(cabValue => <Form onChangeHandler={onChangeHandlerHourlyRental} key={cabValue.title} formValue={cabValue} />)}
           </div>
         </>
         )}
 
 
         <p className='flex justify-center relative'>
-          <button className='absolute -bottom-10 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>
+          <button onClick={handleSubmit(onSubmit)} className='absolute -bottom-10 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>
         </p>
       </div>
     </>

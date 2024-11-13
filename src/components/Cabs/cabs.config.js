@@ -22,46 +22,35 @@ export const cabsInfo = [
 export const cabsOneWay = [
     {
         height: "90px",
-        width: "275px",
+        width: "325px",
         border: true,
         title: "From",
         ChevronDown: false,
         city: true,
-        place: "Pokhara",
+        place: "Lalipur",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
-        width: "275px",
+        width: "325px",
         border: true,
         title: "To",
         ChevronDown: false,
         city: true,
         place: "Kathmandu",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
-        width: "165px",
+        width: "220px",
         border: true,
         title: "Departure",
         ChevronDown: true,
         dateInfo: true,
-        date: 11,
-        month: "Nov",
-        year: 24,
-        day: "Monday"
     },
     {
         height: "90px",
         width: "full",
-        border: true,
-        title: "Return",
-        ChevronDown: true,
-        messageShown: true,
-        message: "Tap to add a return date for bigger discounts"
-    },
-    {
-        height: "90px",
-        width: "230px",
         border: false,
         title: "Pickup-Time",
         ChevronDown: true,
@@ -82,16 +71,18 @@ export const cabsRoundTrip = [
         title: "From",
         ChevronDown: false,
         city: true,
-        place: "Pokhara",
+        place: "Lalitpur",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
-        height: "90px",
+        height: "90px",     
         width: "250px",
         border: true,
         title: "To",
         ChevronDown: false,
         city: true,
         place: "Kathmandu",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
@@ -100,10 +91,6 @@ export const cabsRoundTrip = [
         title: "Departure",
         ChevronDown: true,
         dateInfo: true,
-        date: 11,
-        month: "Nov",
-        year: 24,
-        day: "Monday"
     },
     {
         height: "90px",
@@ -112,10 +99,6 @@ export const cabsRoundTrip = [
         title: "Return",
         ChevronDown: true,
         dateInfo: true,
-        date: 12,
-        month: "Nov",
-        year: 24,
-        day: "Tuesday"
     },
     {
         height: "90px",
@@ -145,23 +128,23 @@ export const cabsRoundTrip = [
 export const cabsAirportTransfer = [
     {
         height: "90px",
-        width: "250px",
+        width: "340px",
         border: true,
         title: "From",
         ChevronDown: false,
         city: true,
         place: "Tribhuvan Internation Airport, Kathmandu",
-        fullplacename: "Tribhuvan Internation Airport, Kathmandu",
+        selectablePlaces: ["Tribhuvan Internation Airport, Kathmandu", "Pokhara International Airport, Pokhara", "Chitwant National Airport, Chitwan", "Hetauda National Airport, Hetauda", "Lukla National Airport"],
     },
     {
         height: "90px",
-        width: "250px",
+        width: "340px",
         border: true,
         title: "To",
         ChevronDown: false,
         city: true,
         place: "Pokhara International Airport, Pokhara",
-        fullplacename: "Pokhara International Airport, Pokhara",
+        selectablePlaces: ["Tribhuvan Internation Airport, Kathmandu", "Pokhara International Airport, Pokhara", "Chitwant National Airport, Chitwan", "Hetauda National Airport, Hetauda", "Lukla National Airport"],
     },
     {
         height: "90px",
@@ -170,10 +153,6 @@ export const cabsAirportTransfer = [
         title: "Departure",
         ChevronDown: true,
         dateInfo: true,
-        date: 11,
-        month: "Nov",
-        year: 24,
-        day: "Monday"
     },
     {
         height: "90px",
@@ -197,8 +176,9 @@ export const cabsHourlyRentals = [
         title: "Pickup Location",
         ChevronDown: false,
         city: true,
-        place: "Pokhara",
-        country: "Nepal"
+        place: "Lalitpur",
+        country: "Nepal",
+        selectablePlaces: ["Lalitpur", "Kathmandu", "Boudha", "Thecho", "Pokhara", "Dharan", "Hetauda"],
     },
     {
         height: "90px",
@@ -207,10 +187,6 @@ export const cabsHourlyRentals = [
         title: "Pickup Date",
         ChevronDown: true,
         dateInfo: true,
-        date: 11,
-        month: "Nov",
-        year: 24,
-        day: "Monday"
     },
     {
         height: "90px",
@@ -227,7 +203,7 @@ export const cabsHourlyRentals = [
         height: "90px",
         width: "full",
         border: true,
-        title: "Pickup-Time",
+        title: "Select Package",
         ChevronDown: true,
         selectPackage: true,
         distance: "1hrs 10kms"

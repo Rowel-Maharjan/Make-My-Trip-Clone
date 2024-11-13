@@ -1,10 +1,30 @@
 import React, { useState } from 'react'
 import Form from '../form'
+import { useForm } from 'react-hook-form';
 import { searchInfo, holidayInfo, CruisePlace, HolidaysPlace, HoneyMoonPlace, HolidaysPlaceItems, CruisePlaceItems, HoneyMoonItems, AirNepalExpress, LuxeItems, LuxePlace } from './holiday.config'
 import { ChevronRight, Search } from 'lucide-react'
 
 const Holidays = () => {
+  const { handleSubmit } = useForm();
   const [holidayActiveTab, setholidayActiveTab] = useState("Search")
+
+  const [formData, setFormData] = useState({
+    "from city": 'Lalitpur',
+    "to city/country/category": 'Kathmandu',
+    "departure date": new Date(),
+    "value": "holidayPackage"
+  });
+
+  const onChangeHandler = (title, value) => {
+    setFormData((prevData) => ({
+      ...prevData,
+      [title.toLowerCase()]: value,
+    }));
+  };
+
+  const onSubmit = () => {
+    console.log(formData); // Here, we can access the form data
+  };
 
   const HoldiayContent = ({ title, places, PicturePlace }) => (
     <div className='p-3'>
@@ -91,10 +111,10 @@ const Holidays = () => {
           {
             holidayActiveTab === "Search" && <>
               <div className='w-full border rounded-lg mb-5 flex border-[#e7e7e7]' >
-                {searchInfo.map(roomValue => <Form key={roomValue.title} formValue={roomValue} />)}
+                {searchInfo.map(roomValue => <Form onChangeHandler={onChangeHandler} key={roomValue.title} formValue={roomValue} />)}
               </div>
               <p className='flex justify-center relative'>
-                <button className='absolute -bottom-7 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>
+                <button onClick={handleSubmit(onSubmit)} className='absolute -bottom-7 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>
               </p>
             </>
           }
