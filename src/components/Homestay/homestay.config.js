@@ -30,7 +30,7 @@ export const homestayInfo = [
         height: "90px",
         width: "245px",
         border: true,
-        title: "Rooms & Guests",
+        title: "Guests",
         ChevronDown: true,
         guestAndChildren: true,
     },

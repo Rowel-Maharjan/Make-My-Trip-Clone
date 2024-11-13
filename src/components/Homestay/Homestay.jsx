@@ -10,7 +10,7 @@ const Homestay = () => {
     "city, property name or location": 'Lalitpur',
     "check-in": new Date(),
     "check-out": new Date(),
-    "rooms & guests": "1Adults 0children",
+    "guests": "1Adults 0children",
     "price per night": "Rs.0 - Rs.1500",
     "value": "Homestay&Villa"
   });
