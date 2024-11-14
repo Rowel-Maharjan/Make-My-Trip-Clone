@@ -2,11 +2,10 @@
 import React, { useState } from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label'
-import { hotelRoomsInfo } from './hotel.config'
 import Form from '../form'
-import { hotelRoomValue } from './hotel.config'
-import { hotelGroupDeals } from './hotel.config'
+import { hotelGroupDeals, hotelRoomValue, hotelRoomsInfo, VisitingArea } from './hotel.config'
 import { useForm } from 'react-hook-form';
+import VisitingPlaces from '../VisitingPlaces'
 
 const Hotels = () => {
   const { handleSubmit } = useForm();
@@ -101,9 +100,12 @@ const Hotels = () => {
             <button onClick={handleSubmit(onSubmit)} className='absolute -bottom-16 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>GET ME BEST PRICES</button>}
         </p>
       </div>
-      <div className='w-[1200px] h-80  relative bg-white py-16 px-5 -top-12 rounded-xl shadow-2xl'>
+      <div className='w-[1200px] h-80  mb-10 relative bg-white py-16 px-5 -top-12 rounded-xl custom-shadow '>
         From Here
+      </div>
 
+      <div className='w-[1200px] flex relative bg-white py-10 px-10 -top-12 rounded-xl custom-shadow mb-11'>
+        <VisitingPlaces VisitingPlaces={VisitingArea} />
       </div>
     </>
   )

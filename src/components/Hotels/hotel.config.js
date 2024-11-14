@@ -98,6 +98,89 @@ export const hotelGroupDeals = [
     },
 ]
 
+export const VisitingArea = [
+    {
+        img: "https://promos.makemytrip.com/store/GoaDT.JPG",
+        title: "Goa",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "North Goa", "Villas"]
+    },
+    {
+        img: "https://promos.makemytrip.com/store/DelhiDT.JPG",
+        title: "Delhi",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels"]
+    },
+    {
+        img: "https://promos.makemytrip.com/store/BangaloreDT.JPG",
+        title: "Bangalore",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Near Airport", "Villas"]
+    },
+    {
+        img: "https://promos.makemytrip.com/altaccoimages/aa_collections_img/mukhteshwar.jpg",
+        title: "Ooty",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Cottages", "Homestay"]
+    },
+    {
+        img: "https://promos.makemytrip.com/altaccoimages/aa_collections_img/gokarna.jpg",
+        title: "Mumbai",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Near Mumbai Airport", "Villas"]
+    },
+    {
+        img: "https://promos.makemytrip.com/altaccoimages/aa_collections_img/conoor.jpg",
+        title: "Shimla",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Near Mall Roads"]
+    },
+    {
+        img: "https://promos.makemytrip.com/altaccoimages/aa_collections_img/kasol.jpg",
+        title: "Jaipur",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Near Railway Station"]
+    },
+    {
+        img: "https://promos.makemytrip.com/altaccoimages/aa_collections_img/malvan.jpg",
+        title: "Manali",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Near Mall Road"]
+    },
+    {
+        img: "https://promos.makemytrip.com/altaccoimages/aa_collections_img/jibhi.jpg",
+        title: "Dubai",
+        description: ["Hotels", "Budget Hotels", "5 Star Hotels", "Best Hotels", "Homestays"]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/CDN_upload/popular%20area.jpg",
+        title: "Singapore",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels"]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/CDN_upload/shutterstock_701150233.jpg",
+        title: "Bangkok",
+        description: ["Hotels", "5 Star Hotels", "Little Nepal", "Best Hotels" ]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/CDN_upload/shutterstock_1008532504.jpg",
+        title: "Pattaya",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "North Goa", "Villas"]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/CDN_upload/shutterstock_389416630.jpg",
+        title: "Phuket",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "North Goa", "Villas"]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/CDN_upload/shutterstock_1306548694.jpg",
+        title: "Bali",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Villas in Bali"]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/CDN_upload/shutterstock_1901686090.jpg",
+        title: "Maldives",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "Hotels in Male", "Villas"]
+    },
+    {
+        img: "https://promos.makemytrip.com/images/50x50-Other-23052019.png",
+        title: "Others",
+        description: ["Hotels", "Budget Hotels", "Resorts", "Best Hotels", "4 Stars Hotel", "Villas"]
+    },
+]
+
 
 
 

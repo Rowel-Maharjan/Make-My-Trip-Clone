@@ -113,6 +113,7 @@ const Form = ({ formValue, onChangeHandler }) => {
                         dateFormat="dd MMMM yyyy"
                         placeholderText="Select a date"
                         className='hidden'
+                        minDate={new Date()}
                     />
 
 

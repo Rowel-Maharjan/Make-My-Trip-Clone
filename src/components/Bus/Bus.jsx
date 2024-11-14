@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { busInfo } from './bus.config';
+import { busInfo, VisitingArea } from './bus.config';
 import Form from '../form';
+import VisitingPlaces from '../VisitingPlaces';
 
 const Bus = () => {
   const { handleSubmit } = useForm();
@@ -46,6 +47,10 @@ const Bus = () => {
             SEARCH
           </button>
         </p>
+      </div>
+
+      <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow  mb-11'>
+        <VisitingPlaces VisitingPlaces={VisitingArea} />
       </div>
     </>
   );

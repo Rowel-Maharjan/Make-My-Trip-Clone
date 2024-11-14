@@ -2,12 +2,9 @@ import React, { useState } from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label'
 import Form from '../form'
-import { cabsInfo } from './cabs.config'
-import { cabsOneWay } from './cabs.config'
-import { cabsRoundTrip } from './cabs.config'
-import { cabsAirportTransfer } from './cabs.config'
-import { cabsHourlyRentals } from './cabs.config'
+import { cabsHourlyRentals, VisitingArea, cabsAirportTransfer, cabsRoundTrip, cabsOneWay, cabsInfo } from './cabs.config'
 import { useForm } from 'react-hook-form';
+import VisitingPlaces from '../VisitingPlaces'
 
 const Cabs = () => {
   const [cabActiveTab, setcabActiveTab] = useState("Outstation One-Way")
@@ -134,6 +131,10 @@ const Cabs = () => {
         <p className='flex justify-center relative'>
           <button onClick={handleSubmit(onSubmit)} className='absolute -bottom-10 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold '>SEARCH</button>
         </p>
+      </div>
+
+      <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow  mb-11'>
+        <VisitingPlaces VisitingPlaces={VisitingArea} />
       </div>
     </>
   )

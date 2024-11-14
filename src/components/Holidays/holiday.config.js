@@ -158,3 +158,53 @@ export const LuxePlace = [
 
 export const LuxeItems = ["Bhaktapur", "illam", "Jhapa", "Itahari", "Lalitpur", "Pokhara", "Dharan", "Chitwan", "China", "Bhutan"]
 
+
+
+export const VisitingArea = [
+    {
+        img: "https://promos.makemytrip.com/store/GoaDT.JPG",
+        title: "Kashmir",
+        description: ["Kashmir Tour Packages", "Kashmir Tourism", "Kashmir Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3872/Havelock_2.jpg?crop=50:50&downsize=50:50",
+        title: "Andaman",
+        description: ["Andaman Tour Packages", "Andaman Tourism", "Andaman Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1185/leh01.jpg?crop=50:50&downsize=50:50",
+        title: "Ladakh",
+        description: ["Ladakh Tour Packages", "Ladakh Tourism", "Ladakh Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1215/Gangtok.jpg?crop=50:50&downsize=50:50",
+        title: "North East",
+        description: ["North East Tour Packages", "North East Tourism", "North East Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1328/Y.jpg?crop=50:50&downsize=50:50",
+        title: "Goa",
+        description: ["Goa Tour Packages", "Goa Tourism", "Goa Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1369/Serene%20Kerala.jpg?crop=50:50&downsize=50:50",
+        title: "Kerala",
+        description: ["Kerala Tour Packages", "Kerala Tourism", "Kerala Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/1993/Aerial%20view%20of%20Paradise%20Island%20Resort.jpg?crop=50:50&downsize=50:50",
+        title: "Maldives",
+        description: ["Maldives Tour Packages", "Maldives Tourism", "Maldives Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/2887/Colombo1.jpg?crop=50:50&downsize=50:50",
+        title: "Sri Lanka",
+        description: ["Sri Lanka Tour Packages", "Sri Lanka Tourism", "Sri Lanka Honeymoon Packages"]
+    },
+    {
+        img: "https://hldak.mmtcdn.com/prod-s3-hld-hpcmsadmin/holidays/images/cities/3147/Dubai-Marina-skyline.jpg?crop=50:50&downsize=50:50",
+        title: "Dubai",
+        description: ["Dubai Tour Packages", "Dubai Tourism", "Dubai Honeymoon Packages"]
+    },
+
+]
