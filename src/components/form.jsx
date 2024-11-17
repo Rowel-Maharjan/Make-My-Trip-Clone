@@ -178,8 +178,8 @@ const Form = ({ formValue, onChangeHandler }) => {
                                     className="rounded-md border p-2 w-20"
                                 >
                                     {Array.from({ length: 12 }, (_, i) => (
-                                        <option key={i} value={String(i+1)}>
-                                            {String(i+1)}
+                                        <option key={i} value={String(i + 1)}>
+                                            {String(i + 1)}
                                         </option>
                                     ))}
                                 </select>
@@ -256,7 +256,7 @@ const Form = ({ formValue, onChangeHandler }) => {
             {formValue.price &&
                 <>
                     <Select onValueChange={handlePriceChange}>
-                        <SelectTrigger ref={selectRef} className="absolute top-0 -left-28 w-5 opacity-0">
+                        <SelectTrigger ref={selectRef} className="absolute top-0 w-5 opacity-0">
                             <SelectValue placeholder="Select a place" />
                         </SelectTrigger>
                         <SelectContent className="w-80 z-50">
