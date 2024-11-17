@@ -5,3 +5,37 @@
 .custom-shadow {
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
   }
+
+
+.flatpickr-day:not(.today):not(.selected):hover {
+    background-color: #eaf5ff !important;
+    border-radius: 5px;
+    color: #4a4a4a !important;
+    border: none;
+}
+
+.flatpickr-day.selected {
+    background-color: #008cff !important;
+    color: white !important;
+    border-radius: 5px;
+    border:none
+}
+.flatpickr-day.today {
+    background-color: #c9e4ff !important;
+    border-radius: 5px;
+    color: #0078D4 !important;
+    border: none
+}
+
+.flatpickr-months .flatpickr-current-month {
+    font-size: 18px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px
+}
+
+
+
+

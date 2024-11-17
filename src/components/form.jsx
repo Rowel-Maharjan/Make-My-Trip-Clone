@@ -9,14 +9,17 @@ import {
     SelectTrigger,
     SelectValue,
 } from "@/components/ui/select"
-import DatePicker from 'react-datepicker';
-import 'react-datepicker/dist/react-datepicker.css';
+import Flatpickr from 'react-flatpickr';
+import 'flatpickr/dist/themes/material_blue.css';
+// import DatePicker from 'react-datepicker';
+// import 'react-datepicker/dist/react-datepicker.css';
 
 const Form = ({ formValue, onChangeHandler }) => {
     const [PlaceName, setPlaceName] = useState()
     const [PackageName, setPackageName] = useState("1hrs 10kms")
     const selectRef = useRef(null);
     const [selectedDate, setSelectedDate] = useState(null);
+    const [isOpen, setIsOpen] = useState(false);
     const dateRef = useRef(null);
     const [returnDate, setReturnDate] = useState(false)
     const [dateStore, setDateStore] = useState({
@@ -58,9 +61,15 @@ const Form = ({ formValue, onChangeHandler }) => {
 
     const handlePlaceClick = () => {
         selectRef.current?.click();
-        if (dateRef.current) {
-            dateRef.current.input.click();
+        if (isOpen) {
+            dateRef.current?.flatpickr.close();
+        } else {
+            dateRef.current?.flatpickr.open();
         }
+        // if (dateRef.current) {
+        //     dateRef.current.input.click();
+        // }
+        setIsOpen(!isOpen);
         setIsTimePickerOpen(!isTimePickerOpen);
         setIsAdultAndChildren(!isAdultAndChildren);
         setIsRoomAndAdult(!isRoomAndAdult);
@@ -82,16 +91,17 @@ const Form = ({ formValue, onChangeHandler }) => {
     };
 
     const handleDateChange = (date, ways = null) => {
+        setIsOpen(!isOpen)
         if (ways === "return") {
-            setReturnDate(true)
+            setReturnDate(true);
         }
-        setSelectedDate(date);
-        const newDate = date.getDate();
-        const newMonth = date.toLocaleString('default', { month: 'short' });
-        const newYear = (date.getFullYear()) % 100
-        const newDay = date.toLocaleString('default', { weekday: 'long' });
-        setDateStore({ date: newDate, month: newMonth, year: newYear, day: newDay })
-        onChangeHandler(formValue.title, date);
+        setSelectedDate(date[0]);
+        const newDate = date[0].getDate();
+        const newMonth = date[0].toLocaleString('default', { month: 'short' });
+        const newYear = date[0].getFullYear() % 100;
+        const newDay = date[0].toLocaleString('default', { weekday: 'long' });
+        setDateStore({ date: newDate, month: newMonth, year: newYear, day: newDay });
+        onChangeHandler(formValue.title, date[0]);
     };
 
 
@@ -106,7 +116,7 @@ const Form = ({ formValue, onChangeHandler }) => {
 
             {formValue.dateInfo &&
                 <>
-                    <DatePicker
+                    {/* <DatePicker
                         ref={dateRef}
                         selected={selectedDate}
                         onChange={handleDateChange}
@@ -114,6 +124,18 @@ const Form = ({ formValue, onChangeHandler }) => {
                         placeholderText="Select a date"
                         className='hidden'
                         minDate={new Date()}
+                    /> */}
+
+                    <Flatpickr
+                        ref={dateRef}
+                        value={selectedDate}
+                        options={{
+                            dateFormat: "d M Y",
+                            minDate: "today",
+                            onChange: handleDateChange,
+                            onOpen: () => setIsOpen(true),
+                        }}
+                        className='w-0 opacity-0'
                     />
 
 
