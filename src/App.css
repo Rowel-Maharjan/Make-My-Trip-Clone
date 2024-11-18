@@ -2,6 +2,7 @@
     font-family: lato;
 }
 
+
 .custom-shadow {
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
 }
@@ -36,3 +37,5 @@
     justify-content: center;
     gap: 3px
 }
+  
+  
