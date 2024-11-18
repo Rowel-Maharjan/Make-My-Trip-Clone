@@ -112,6 +112,3 @@ const Hotels = () => {
 }
 
 export default Hotels
-
-
-//Check
