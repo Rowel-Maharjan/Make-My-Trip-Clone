@@ -3,9 +3,11 @@ import React, { useState } from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label'
 import Form from '../form'
-import { hotelGroupDeals, hotelRoomValue, hotelRoomsInfo, VisitingArea } from './hotel.config'
+import { hotelGroupDeals, hotelRoomValue, hotelRoomsInfo, VisitingArea, FooterOffering } from './hotel.config'
 import { useForm } from 'react-hook-form';
 import VisitingPlaces from '../VisitingPlaces'
+import Offerings from '../Offerings'
+
 
 const Hotels = () => {
   const { handleSubmit } = useForm();
@@ -104,9 +106,16 @@ const Hotels = () => {
         From Here
       </div>
 
-      <div className='w-[1200px] flex relative bg-white py-10 px-10 -top-12 rounded-xl custom-shadow mb-11'>
+      <div className='w-[1200px] flex relative bg-white py-10 px-10 -top-12 rounded-xl custom-shadow mb-5'>
         <VisitingPlaces VisitingPlaces={VisitingArea} />
       </div>
+
+      <div className='w-[1200px]'>
+        <Offerings offerings={FooterOffering} />
+      </div>
+
+
+
     </>
   )
 }

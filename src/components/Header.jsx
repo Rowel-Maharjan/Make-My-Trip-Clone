@@ -21,14 +21,6 @@ const Header = () => {
         </div>
 
         <div className='flex items-center gap-2 cursor-pointer shadow-lg px-3 border-dotted border-l-2 border-white/15'>
-          <Icon type="myBizIcon" />
-          <div className='flex flex-col' >
-            <div className='text-[14px] font-bold leading-3'>Introducing myBiz</div>
-            <div className='text-[10px] font-normal leading-3'>Business Travel Solution</div>
-          </div>
-        </div>
-
-        <div className='flex items-center gap-2 cursor-pointer shadow-lg px-3 border-dotted border-l-2 border-white/15'>
           <Icon type="myTripsIcon" />
           <div className='flex flex-col' >
             <div className='text-[11px] leading-3 font-bold'>My Trips</div>

@@ -208,3 +208,61 @@ export const VisitingArea = [
     },
 
 ]
+
+export const FooterOffering = [
+    {
+        title: "Product Offering",
+        description: [
+            "Flights", "International Flights", "Charter Flights", "Hotels", "International Hotels", "Homestays and Villas",
+            "Activities", "Holidays In India", "International Holidays", "Book Hotels From UAE", "myBiz for Corporate Travel",
+            "Book Online Cabs", "Book Bus Tickets", "Book Train Tickets", "Cheap Tickets to India", "Book Flights From US",
+            "Book Flights From UAE", "Trip Planner", "Forex Card", "Buy Foreign Currency", "Travel Insurance",
+            "Travel Insurance Thailand", "Travel Insurance USA", "Travel Insurance Dubai", "Travel Insurance Canada",
+            "Travel Insurance Singapore", "Gift Cards", "Gift", "Wedding Gift", "Anniversary Gift", "Birthday Gift",
+            "Diwali Gift", "Valentines Gift", "Farewell Gift", "Christmas Gift", "New Year Gift", "Trip Money", "Trip Ideas",
+            "Travel Blog", "PNR Status", "MakeMyTrip Advertising Solutions", "One Way Cab"
+        ]
+    },
+    {
+        title: "MakeMyTrip",
+        description: [
+            "About Us", "Investor Relations", "Careers", "Sustainability", "MMT Foundation", "Legal Notices",
+            "CSR Policy & Committee", "myPartner - Travel Agent Portal", "Foreign Exchange", "List your hotel",
+            "Partners- Redbus", "Partners- Goibibo", "Advertise with Us", "Holiday-Franchise"
+        ]
+    },
+    {
+        title: "About the Site",
+        description: [
+            "Customer Support", "Payment Security", "Privacy Policy", "Cookie Policy", "User Agreement",
+            "Terms of Service", "Franchise Offices", "Make A Payment", "Work From Home", "Escalation Channel"
+        ]
+    },
+    {
+        title: "Important Links",
+        description: [
+            "Ladakh Tour Packages", "Andaman Tour Packages", "Kashmir Tour Packages", "Gujarat Tourism",
+            "North East Tour Package", "Golden Triangle Tour Packages", "Luxury Tour packages",
+            "South India Tour Packages", "International Honeymoon Packages", "Andaman Honeymoon Packages",
+            "Kerala Honeymoon Packages", "Mauritius Honeymoon Packages", "Maldives Honeymoon Packages",
+            "Bali Honeymoon Packages", "Europe Honeymoon Packages", "Dubai Honeymoon Packages",
+            "Singapore Honeymoon Packages", "Thailand Honeymoon Packages", "Manali Honeymoon Packages",
+            "Goa Honeymoon Packages", "Ooty Honeymoon Packages", "Shimla Honeymoon Packages",
+            "Munnar Honeymoon Packages", "Kashmir Honeymoon Packages", "Coorg Honeymoon Packages",
+            "Switzerland Honeymoon Packages"
+        ]
+    },
+    {
+        title: "Quick Links",
+        description: [
+            "Honeymoon Packages", "Family Packages", "Beach Packages", "Lakshadweep Tour Packages",
+            "Maldives Tour Packages", "Singapore Tour Packages", "Thailand Tour Packages", "Mauritius Tour Packages",
+            "Bali Tour Packages", "Switzerland Tour Packages", "Dubai Tour Packages", "Srilanka Tour Packages",
+            "Europe Tour Packages", "Russia Tour Packages", "Bangkok Tour Packages", "Bhutan Tour Packages",
+            "Nepal Tour Packages", "Greece Tour Packages", "Shimla Tour Packages", "Coorg Tour Packages",
+            "Kerala Tour Packages", "Goa Tour Packages", "Manali Tour Packages", "Ooty Tour Packages",
+            "Uttarakhand Tour Packages", "Nainital Tour Packages", "Sikkim Tour Packages", "Rajasthan Tour Packages",
+            "Himachal Tour Packages"
+        ]
+    }
+]

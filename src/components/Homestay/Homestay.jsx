@@ -1,10 +1,9 @@
 import React, { useState } from 'react'
 import Form from '../form'
-import { homestayInfo, VisitingArea } from './homestay.config'
+import { homestayInfo, VisitingArea, FooterOffering } from './homestay.config'
 import { useForm } from 'react-hook-form';
 import VisitingPlaces from '../VisitingPlaces';
-
-
+import Offerings from '../Offerings';
 
 const Homestay = () => {
   const { handleSubmit } = useForm();
@@ -47,7 +46,9 @@ const Homestay = () => {
 
       <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow mb-11'>
         Here
-
+      </div>
+      <div className='w-[1200px]'>
+        <Offerings offerings={FooterOffering} />
       </div>
     </>
   )

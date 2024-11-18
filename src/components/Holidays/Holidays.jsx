@@ -1,9 +1,10 @@
 import React, { useState } from 'react'
 import Form from '../form'
 import { useForm } from 'react-hook-form';
-import { searchInfo, holidayInfo, CruisePlace, HolidaysPlace, HoneyMoonPlace, HolidaysPlaceItems, CruisePlaceItems, HoneyMoonItems, AirNepalExpress, LuxeItems, LuxePlace, VisitingArea } from './holiday.config'
+import { searchInfo, holidayInfo, CruisePlace, HolidaysPlace, HoneyMoonPlace, HolidaysPlaceItems, CruisePlaceItems, HoneyMoonItems, AirNepalExpress, LuxeItems, LuxePlace, VisitingArea, FooterOffering } from './holiday.config'
 import { ChevronRight, Search } from 'lucide-react'
 import VisitingPlaces from '../VisitingPlaces';
+import Offerings from '../Offerings';
 
 const Holidays = () => {
   const { handleSubmit } = useForm();
@@ -146,6 +147,9 @@ const Holidays = () => {
 
       <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow  mb-11'>
         <VisitingPlaces VisitingPlaces={VisitingArea} />
+      </div>
+      <div className='w-[1200px]'>
+        <Offerings offerings={FooterOffering} />
       </div>
     </>
   )

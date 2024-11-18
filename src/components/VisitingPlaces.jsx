@@ -6,7 +6,7 @@ const VisitingPlaces = ({ VisitingPlaces }) => {
             {VisitingPlaces.map(place => <div key={place.title} className='flex w-80 items-center'>
                 <img src={place.img} alt="Image Not Found" className='mr-4 w-12 h-12 rounded-full object-cover' />
                 <div className='flex flex-col'>
-                    <p className='font-bold text-lg leading-4 mb-2'>{place.title}</p>
+                    <p className='font-bold text-lg leading-4 mb-1'>{place.title}</p>
                     <p className='leading-4'>
                         {place.description.map((placeInfo, index) =>
                             <a key={index} className='leading-4 text-sm font-normal cursor-pointer'>

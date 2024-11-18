@@ -1,8 +1,10 @@
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
-import { busInfo, VisitingArea } from './bus.config';
+import { busInfo, VisitingArea, FooterOffering } from './bus.config';
 import Form from '../form';
 import VisitingPlaces from '../VisitingPlaces';
+import Offerings from '../Offerings';
+
 
 const Bus = () => {
   const { handleSubmit } = useForm();
@@ -51,6 +53,9 @@ const Bus = () => {
 
       <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow  mb-11'>
         <VisitingPlaces VisitingPlaces={VisitingArea} />
+      </div>
+      <div className='w-[1200px]'>
+        <Offerings offerings={FooterOffering} />
       </div>
     </>
   );

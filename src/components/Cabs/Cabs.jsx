@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import { RadioGroup, RadioGroupItem } from '../ui/radio-group'
 import { Label } from '../ui/label'
 import Form from '../form'
-import { cabsHourlyRentals, VisitingArea, cabsAirportTransfer, cabsRoundTrip, cabsOneWay, cabsInfo } from './cabs.config'
+import { cabsHourlyRentals, VisitingArea, cabsAirportTransfer, cabsRoundTrip, cabsOneWay, cabsInfo, FooterOffering } from './cabs.config'
 import { useForm } from 'react-hook-form';
 import VisitingPlaces from '../VisitingPlaces'
+import Offerings from '../Offerings';
 
 const Cabs = () => {
   const [cabActiveTab, setcabActiveTab] = useState("Outstation One-Way")
@@ -135,6 +136,9 @@ const Cabs = () => {
 
       <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow  mb-11'>
         <VisitingPlaces VisitingPlaces={VisitingArea} />
+      </div>
+      <div className='w-[1200px]'>
+        <Offerings offerings={FooterOffering} />
       </div>
     </>
   )

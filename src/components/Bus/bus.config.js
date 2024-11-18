@@ -80,3 +80,37 @@ export const VisitingArea = [
     },
 
 ]
+
+export const FooterOffering = [
+    {
+        title: "Product Offering",
+        description: [
+            "Flights", "International Flights", "Charter Flights", "Hotels", "International Hotels", "Homestays and Villas", "Activities", "Holidays In India", "International Holidays", "Book Hotels From UAE", "myBiz for Corporate Travel", "Book Online Cabs", "Book Bus Tickets", "Book Train Tickets", "Cheap Tickets to India", "Book Flights From US", "Book Flights From UAE", "Trip Planner", "Forex Card", "Buy Foreign Currency", "Travel Insurance", "Travel Insurance Thailand", "Travel Insurance USA", "Travel Insurance Dubai", "Travel Insurance Canada", "Travel Insurance Singapore", "Gift Cards", "Gift", "Wedding Gift", "Anniversary Gift", "Birthday Gift", "Diwali Gift", "Valentines Gift", "Farewell Gift", "Christmas Gift", "New Year Gift", "Trip Money", "Trip Ideas", "Travel Blog", "PNR Status", "One Way Cab"
+        ]
+    },
+    {
+        title: "MakeMyTrip",
+        description: [
+            "About Us", "Investor Relations", "Careers", "MMT Foundation", "CSR Policy & Committee", "myPartner - Travel Agent Portal", "Foreign Exchange", "List your hotel", "Partners- Redbus", "Partners- Goibibo", "Partners- BookMyForex"
+        ]
+    },
+    {
+        title: "About the Site",
+        description: [
+            "Customer Support", "Payment Security", "Privacy Policy", "User Agreement", "Terms of Service",
+            "Franchise Offices", "Make A Payment", "Work From Home"
+        ]
+    },
+    {
+        title: "Important Links",
+        description: [
+            "Bangalore to Chennai Bus", "Chennai to Bangalore Bus", "Kolkata to Siliguri Bus", "Chandigarh to Manali Bus", "Delhi to Jaipur Bus", "Delhi to Chandigarh Bus", "Mumbai to Goa Bus", "Delhi to Shimla Bus", "Mumbai to Pune Bus", "Delhi to Haridwar Bus", "Mumbai to Bangalore Bus", "Bangalore to Goa Bus", "Hyderabad to Bangalore Bus", "Bangalore to Hyderabad Bus", "Delhi to Dehradun Bus", "Lucknow to Delhi Bus", "Jaipur to Delhi Bus", "Bhopal to Indore Bus", "Delhi to Manali Bus", "Indore to Bhopal Bus"
+        ]
+    },
+    {
+        title: "Quick Links",
+        description: [
+            "SBSTC", "TSRTC", "ASTC", "Hans Travels", "UPSRTC", "SRM Travels", "M J T Travels", "MSRTC", "Parveen Travels", "Kaveri Travels", "OSRTC", "GSRTC", "Neeta Travels", "KPN Travels", "VRL Travels", "Green line Travels", "TNSTC", "HRTC", "APSRTC", "TSRTC"
+        ]
+    }
+]

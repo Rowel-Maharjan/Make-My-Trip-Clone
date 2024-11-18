@@ -243,3 +243,53 @@ export const VisitingArea = [
     },
 
 ]
+
+export const FooterOffering = [
+    {
+        title: "Product Offering",
+        description: [
+            "Flights", "International Flights", "Charter Flights", "Hotels", "International Hotels", "Homestays and Villas",
+            "Activities", "Holidays In India", "International Holidays", "Book Hotels From UAE", "myBiz for Corporate Travel",
+            "Book Online Cabs", "Book Bus Tickets", "Book Train Tickets", "Cheap Tickets to India", "Book Flights From US",
+            "Book Flights From UAE", "Trip Planner", "Forex Card", "Buy Foreign Currency", "Travel Insurance",
+            "Travel Insurance Thailand", "Travel Insurance USA", "Travel Insurance Dubai", "Travel Insurance Canada",
+            "Travel Insurance Singapore", "Gift Cards", "Gift", "Wedding Gift", "Anniversary Gift", "Birthday Gift",
+            "Diwali Gift", "Valentines Gift", "Farewell Gift", "Christmas Gift", "New Year Gift", "Trip Money", "Trip Ideas",
+            "Travel Blog", "PNR Status", "MakeMyTrip Advertising Solutions", "One Way Cab"
+        ]
+    },
+    {
+        title: "MakeMyTrip",
+        description: [
+            "About Us", "Investor Relations", "Careers", "MMT Foundation", "CSR Policy & Committee",
+            "myPartner - Travel Agent Portal", "Foreign Exchange", "List your hotel", "Partners- Redbus",
+            "Partners- Goibibo", "Partners- BookMyForex", "Advertise with Us"
+        ]
+    },
+    {
+        title: "About the Site",
+        description: [
+            "Customer Support", "Payment Security", "Privacy Policy", "User Agreement", "Terms of Service",
+            "Franchise Offices", "Make A Payment", "Work From Home"
+        ]
+    },
+    {
+        title: "Important Links",
+        description: [
+            "Mumbai to Vadodara Cabs", "Mumbai to Pune Cabs", "Mumbai to Nashik Cabs", "Nashik to Mumbai Cabs",
+            "Pune to Mumbai Cabs", "Delhi to Manali Cabs", "Delhi to Chandigarh Cabs", "Pune to Shirdi Cabs",
+            "Delhi to Jaipur Cabs", "Mumbai to Surat Cabs", "Pune to Nashik Cabs", "Chandigarh to Manali Cabs",
+            "Delhi to Shimla Cabs", "Pune to Lonavala Cabs", "Shimla to Chandigarh Cabs", "Agra to Delhi Cabs",
+            "Delhi to Agra Cabs", "Kanpur to Lucknow Cabs", "Mumbai to Shirdi Cabs", "Mysore to Bangalore Cabs"
+        ]
+    },
+    {
+        title: "Quick Links",
+        description: [
+            "Taxi Services in Bangalore", "Taxi Services in Chennai", "Taxi Services in Delhi", "Taxi Services in Hyderabad",
+            "Taxi service in Ahmedabad", "Taxi Services in Gurgaon", "Taxi Services in Chandigarh", "Taxi Services in Mumbai",
+            "Taxi Services in Jaipur", "Taxi Services in Pune", "Taxi Services in Haridwar", "Taxi Services in Udaipur",
+            "Taxi Services in Lucknow", "Taxi Services in Shimla", "Taxi Services In Dharamshala"
+        ]
+    }
+]
