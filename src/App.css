@@ -1,10 +1,10 @@
-*{
+* {
     font-family: lato;
 }
 
 .custom-shadow {
     box-shadow: 0 3px 30px 0 rgba(0, 0, 0, 0.1);
-  }
+}
 
 
 .flatpickr-day:not(.today):not(.selected):hover {
@@ -18,8 +18,9 @@
     background-color: #008cff !important;
     color: white !important;
     border-radius: 5px;
-    border:none
+    border: none
 }
+
 .flatpickr-day.today {
     background-color: #c9e4ff !important;
     border-radius: 5px;
@@ -35,7 +36,3 @@
     justify-content: center;
     gap: 3px
 }
-
-
-
-
