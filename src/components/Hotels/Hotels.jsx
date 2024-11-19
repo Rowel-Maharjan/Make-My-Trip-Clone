@@ -13,6 +13,7 @@ import { useForm } from "react-hook-form";
 import VisitingPlaces from "../VisitingPlaces";
 import Offerings from "../Offerings";
 import background from "../../assets/Luxebackground.jpg";
+import background1 from "../../assets/Background.avif";
 import image1 from "../../assets/luxeProperties.png";
 import image2 from "../../assets/Luxevilla.jpg";
 import image3 from "../../assets/Luxeinternational.jpg";
@@ -152,7 +153,7 @@ const Hotels = () => {
       <div
         className="w-[1200px] relative bg-white py-[34px] pr-[30px] pl-[40px] -top-12 rounded-xl mb-11 shadow-2xl h-auto flex"
         style={{
-          backgroundImage: `url(${background})`,
+          backgroundImage: `linear-gradient(rgba(237, 210, 135, 0.1), rgba(237, 210, 135, 0.1)), url(${background1})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -161,7 +162,7 @@ const Hotels = () => {
         <div className="flex px-2 w-[32%] mt-6">
           <div>
             <h3 className="font-bold text-sm">INTRODUCING</h3>
-            <h2 className="gradient-text font-black leading-[45px]">
+            <h2 className="gradient-text lato-black leading-[45px]">
               MMT Luxe Selections
             </h2>
             <p className="font-bold">
@@ -176,7 +177,7 @@ const Hotels = () => {
 
         {/* Image Section */}
         <div className="grid grid-cols-3 gap-3 w-[70%] ml-6">
-          <div className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg">
+          <div className="w-[233px] h-auto bg-white rounded-md shadow-bottom">
             <img
               src={image1}
               alt="Luxury Property 1"
@@ -191,7 +192,7 @@ const Hotels = () => {
               </p>
             </div>
           </div>
-          <div className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg">
+          <div className="w-[233px] h-auto bg-white rounded-md shadow-bottom">
             <img
               src={image2}
               alt="Luxury Property 2"
@@ -204,7 +205,7 @@ const Hotels = () => {
               </p>
             </div>
           </div>
-          <div className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg">
+          <div className="w-[233px] h-auto bg-white rounded-md shadow-bottom">
             <img
               src={image3}
               alt="Luxury Property 3"

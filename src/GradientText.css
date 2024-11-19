@@ -5,3 +5,13 @@
   -webkit-background-clip: text; 
   color: transparent; 
 }
+
+.lato-black {
+  font-family: "Lato", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.shadow-bottom {
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
