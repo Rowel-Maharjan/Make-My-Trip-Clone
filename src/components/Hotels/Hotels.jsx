@@ -141,12 +141,14 @@ const Hotels = () => {
             onClick={handleSubmit(onSubmit)}
             className="absolute -bottom-16 px-5 py-2 -mb-5 inline-block bg-gradient-to-r min-w-[216px] from-[#53b2fe] to-[#065af3] rounded-full text-white text-2xl font-bold"
           >
-            {hotelActiveTab === "Upto 4 Rooms" ? "SEARCH" : "GET ME BEST PRICES"}
+            {hotelActiveTab === "Upto 4 Rooms"
+              ? "SEARCH"
+              : "GET ME BEST PRICES"}
           </button>
         </p>
       </div>
 
-      {/* Luxe Section */}
+      {/* Luxe Container */}
       <div
         className="w-[1200px] relative bg-white py-[34px] pr-[30px] pl-[40px] -top-12 rounded-xl mb-11 shadow-2xl h-auto flex"
         style={{
@@ -155,6 +157,7 @@ const Hotels = () => {
           backgroundPosition: "center",
         }}
       >
+        {/* Text Section */}
         <div className="flex px-2 w-[32%] mt-6">
           <div>
             <h3 className="font-bold text-sm">INTRODUCING</h3>
@@ -170,25 +173,50 @@ const Hotels = () => {
             </button>
           </div>
         </div>
+
+        {/* Image Section */}
         <div className="grid grid-cols-3 gap-3 w-[70%] ml-6">
-          {[image1, image2, image3].map((img, index) => (
-            <div
-              key={index}
-              className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg"
-            >
-              <img
-                src={img}
-                alt={`Luxury Property ${index + 1}`}
-                className="w-full h-[170px] object-cover rounded-t-md"
-              />
-              <div className="px-[16px] py-[10px] leading-[20px]">
-                <h1 className="font-black text-[20px]">Luxe {index + 1}</h1>
-                <p className="text-[#4a4a4a] text-sm">
-                  Explore premium experiences
-                </p>
-              </div>
+          <div className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg">
+            <img
+              src={image1}
+              alt="Luxury Property 1"
+              className="w-full h-[170px] object-cover rounded-t-md"
+            />
+            <div className="px-[16px] py-[10px] leading-[20px]">
+              <h1 className="font-black text-[20px]">
+                Luxe properties in India
+              </h1>
+              <p className="text-[#4a4a4a] text-sm">
+                Explore by Luxary brands, themes and top picks
+              </p>
             </div>
-          ))}
+          </div>
+          <div className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg">
+            <img
+              src={image2}
+              alt="Luxury Property 2"
+              className="w-full h-[170px] object-cover rounded-t-md"
+            />
+            <div className="px-[16px] py-[10px] leading-[20px]">
+              <h1 className="font-black text-[20px]">Luxe Villas</h1>
+              <p className="text-[#4a4a4a] text-sm">
+                Premium Villas with Superlative Experience
+              </p>
+            </div>
+          </div>
+          <div className="w-[233px] h-auto bg-gray-100 rounded-md shadow-lg">
+            <img
+              src={image3}
+              alt="Luxury Property 3"
+              className="w-full h-[170px] object-cover rounded-t-md"
+            />
+            <div className="px-[16px] py-[10px] leading-[20px]">
+              <h1 className="font-black text-[20px]">Luxe International</h1>
+              <p className="text-[#4a4a4a] text-sm">
+                Dubai, Maldives, Thailand & More
+              </p>
+            </div>
+          </div>
         </div>
       </div>
 
