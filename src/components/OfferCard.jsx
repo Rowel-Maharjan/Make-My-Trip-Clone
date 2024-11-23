@@ -12,7 +12,6 @@ const OfferCard = ({ offer }) => {
 
       {/* Content Section (Right Side) */}
       <div className="flex-1 flex flex-col">
-        {/* Category and T&Cs: Always at the top */}
         <div className="flex justify-between items-center mb-1">
           <span className="text-[13px] font-semibold text-gray-600">
             {offer.category_title}
@@ -27,9 +26,10 @@ const OfferCard = ({ offer }) => {
         <hr className="w-[12%] border-red-500 my-2" />
 
         {/* Description */}
-        <p className="text-sm text-gray-600 mb-2 leading-4">{offer.description}</p>
+        <p className="text-sm text-gray-600 mb-2 leading-4">
+          {offer.description}
+        </p>
 
-        {/* Spacer to push footer content to the bottom */}
         <div className="flex-grow" />
 
         {/* Footer Section */}
@@ -41,7 +41,6 @@ const OfferCard = ({ offer }) => {
             </p>
           )}
 
-          {/* Book Now Button */}
           <button className="text-blue-600 font-bold text-sm hover:underline ml-auto">
             BOOK NOW
           </button>
@@ -52,4 +51,3 @@ const OfferCard = ({ offer }) => {
 };
 
 export default OfferCard;
-
