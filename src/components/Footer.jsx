@@ -3,7 +3,7 @@ import './Footer.css'
 
 const Footer = () => {
     const Icon = ({ type }) => {
-        return <span className={`icon ${type}`} />;
+        return <span className={`Footericon ${type}`} />;
     };
     return (
         <div className='bg-black text-white pt-14 px-0 pb-[70px]'>
