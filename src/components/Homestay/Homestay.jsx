@@ -4,6 +4,7 @@ import { homestayInfo, VisitingArea, FooterOffering } from './homestay.config'
 import { useForm } from 'react-hook-form';
 import VisitingPlaces from '../VisitingPlaces';
 import Offerings from '../Offerings';
+import About from './About';
 
 const Homestay = () => {
   const { handleSubmit } = useForm();
@@ -50,6 +51,7 @@ const Homestay = () => {
       <div className='w-[1200px]'>
         <Offerings offerings={FooterOffering} />
       </div>
+      <About />
     </>
   )
 }

@@ -18,6 +18,7 @@ import image2 from "../../assets/Luxevilla.jpg";
 import image3 from "../../assets/Luxeinternational.jpg";
 import "../../GradientText.css";
 import OfferList from "../OfferList";
+import About from "./About";
 
 const Hotels = () => {
   const { handleSubmit } = useForm();
@@ -69,19 +70,17 @@ const Hotels = () => {
               <div
                 key={roominfo.id}
                 onClick={() => setHotelActiveTab(roominfo.value)}
-                className={`flex cursor-pointer items-center p-1 ${
-                  roominfo.value === hotelActiveTab
+                className={`flex cursor-pointer items-center p-1 ${roominfo.value === hotelActiveTab
                     ? "bg-[#eaf5ff] rounded-full"
                     : ""
-                }`}
+                  }`}
               >
                 <RadioGroupItem value={roominfo.value} id={roominfo.id} />
                 <Label
-                  className={`cursor-pointer pl-2 font-normal text-sm text-[#4a4a4a] ${
-                    roominfo.value === hotelActiveTab
+                  className={`cursor-pointer pl-2 font-normal text-sm text-[#4a4a4a] ${roominfo.value === hotelActiveTab
                       ? "font-bold text-black"
                       : ""
-                  }`}
+                    }`}
                   htmlFor={roominfo.id}
                 >
                   {roominfo.value}
@@ -247,6 +246,11 @@ const Hotels = () => {
       <div className="w-[1200px]">
         <Offerings offerings={FooterOffering} />
       </div>
+
+      {/* About  */}
+      <About />
+
+
     </>
   );
 };

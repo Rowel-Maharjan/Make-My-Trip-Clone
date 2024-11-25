@@ -6,9 +6,9 @@ const Footer = () => {
         return <span className={`icon ${type}`} />;
     };
     return (
-        <div className='bg-black text-white pt-12 px-0 pb-14'>
+        <div className='bg-black text-white pt-14 px-0 pb-[70px]'>
             <div className='w-[1200px] flex mx-auto justify-between'>
-                <div className='flex items-center gap-8'>
+                <div className='flex items-center gap-10'>
                     <Icon type="instagramIcon" />
                     <Icon type="twitterIcon" />
                     <Icon type="linkedinIcon" />

@@ -6,6 +6,7 @@ import { cabsHourlyRentals, VisitingArea, cabsAirportTransfer, cabsRoundTrip, ca
 import { useForm } from 'react-hook-form';
 import VisitingPlaces from '../VisitingPlaces'
 import Offerings from '../Offerings';
+import About from './About'
 
 const Cabs = () => {
   const [cabActiveTab, setcabActiveTab] = useState("Outstation One-Way")
@@ -140,6 +141,8 @@ const Cabs = () => {
       <div className='w-[1200px]'>
         <Offerings offerings={FooterOffering} />
       </div>
+
+      <About />
     </>
   )
 }

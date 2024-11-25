@@ -5,6 +5,7 @@ import { searchInfo, holidayInfo, CruisePlace, HolidaysPlace, HoneyMoonPlace, Ho
 import { ChevronRight, Search } from 'lucide-react'
 import VisitingPlaces from '../VisitingPlaces';
 import Offerings from '../Offerings';
+import About from './About';
 
 const Holidays = () => {
   const { handleSubmit } = useForm();
@@ -151,6 +152,8 @@ const Holidays = () => {
       <div className='w-[1200px]'>
         <Offerings offerings={FooterOffering} />
       </div>
+      
+      <About />
     </>
   )
 }
