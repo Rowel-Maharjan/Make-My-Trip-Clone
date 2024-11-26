@@ -19,3 +19,16 @@
 .box_shadow {
   box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
 }
+
+.button_color {
+  color: #008cff;
+}
+
+.border_color {
+  border-bottom: solid 3px #008cff;
+}
+
+.toggle_button {
+  box-shadow: -2px 0 3px 0 rgba(0, 0, 0, 0.1);
+  border: solid 1px #f1f1f1;
+} 

@@ -41,7 +41,7 @@ const OfferCard = ({ offer }) => {
             </p>
           )}
 
-          <button className="text-blue-600 font-bold text-sm hover:underline ml-auto">
+          <button className="button_color font-extrabold text-sm hover:underline ml-auto">
             BOOK NOW
           </button>
         </div>

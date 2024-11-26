@@ -111,4 +111,20 @@ export const offers = [
     image: [img_12],
     category: "hotels",
   },
+  {
+    _id: "o13",
+    title: "New Flights Introduced by Air India",
+    description: "connecting Mumbai & Bali",
+    category_title: "INTL FLIGHTS",
+    image: [img_7],
+    category: "flights",
+  },
+  {
+    _id: "o14",
+    title: "New Cabs Introduced by Cabs India",
+    description: "connecting India",
+    category_title: "CABS",
+    image: [img_13],
+    category: "cabs",
+  },
 ];
