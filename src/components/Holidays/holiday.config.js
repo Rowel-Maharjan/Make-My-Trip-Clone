@@ -266,3 +266,135 @@ export const FooterOffering = [
         ]
     }
 ]
+
+export const aboutData = [
+    {
+        title: "Why Book Holidays with MakeMyTrip?",
+        description: ["MakeMyTrip.com, India's leading online travel company, has a profound understanding of Indian consumers travel needs and preferences. It offers a wide range of holiday packages in India and across the world, catering to various segments of travellers. While the dynamic or customized tour and travel packages give consumers an option to create and design their own holiday, the fixed departure holiday packages have a pre-designed itinerary; thus ensuring there is something to meet the holiday needs of every kind of traveller."]
+    },
+    {
+        title: "What does MakeMyTrip Holidays offer?",
+        description: ["MakeMyTrip offers a hassle-free holiday wherein all your travel needs are taken care of. Be it your accommodation in comfortable hotels, convenient transfers, varied sightseeing options and an array of activities to choose from, delectable meals and niche experiences - the holiday packages are designed such to offer you an unparalleled experience. Be it popular destinations such as Andaman, Kerala, Rajasthan and Kashmir, or more offbeat ones like North East, Ladakh and Uttarakhand, there are tailor-made packages for destinations from all over India. From distinctive honeymoon packages to exclusive tour packages for women, from itineraries designed for solo travellers, families with kids and for those who are young at heart - MakeMyTrip has an answer to all our holiday needs."]
+    },
+    {
+        title: "How to book Holidays with MakeMyTrip?",
+        description: ["The user-friendly MakeMyTrip App and website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With MakeMyTrip, planning and buying your ideal holiday has never been easier."]
+    },
+    {
+        title: "The Ultimate Guide to Holidaying in India",
+        description: ["India is a land of history and diversity. As a country that enjoys nature's bounty in the form of gorgeous beaches, majestic mountains, colourful deserts and lush forests, it has attracted tourists for centuries now. It's no wonder that India holiday packages are so popular among travellers today. So, if you are planning to spend your holidays in India, we have done the homework for you. To make your holidays unforgettable, read on to know more about this fascinating country! Plan your India tours to various exciting destinations in the country with ease.",
+
+            "For a country as old as India, there is a place or a city for everyone.And almost all India holiday packages will give you a glimpse of this.For the spiritual traveller, there is Varanasi; for the offbeat adventurer, there is Ladakh, Arunachal Pradesh & more; if you are looking for some beach vibes, there are Goa and Lakshadweep.You can choose what you want from the vast list of India tour packages.So plan your holidays in India by booking incredible all India tour packages online.You can make the most out of your India tours by choosing holiday packages that are perfect for you."]
+    },
+];
+
+export const DestinationData = [
+    {
+        title: "Goa",
+        description: "The unofficial party place of India, Goa is more than that. It has a great legacy, history and culture that are yet to be explored. But if beaches are what you are looking for, then the state has that too. And that's why, India tours to Goa are a great option to explore the place, according to your interests. Goa holiday packages are also popular because Goa is one of the top places in the world when it comes to nightlife. Find several exciting tour packages and other India holiday packages that let you try Goa's melange of watersports and other fun activities.",
+        time: "November to February",
+        place: [
+            "Calangute", "Baga", "Anjuna", "Miramar", "Palolem", "Panjim"
+        ],
+        conclusion: "You can also include the offbeat Patnem Beach in your holiday tour packages, since it was listed amongst one of Asia's top 20 beaches."
+    },
+    {
+        title: "Kerala",
+        description: "God's own country, Kerala has been a popular tourist destination in India. You can explore it all with India tours to this marvellous destination. With suitable tour packages, you can discover scenic seaside destinations and hill stations in Kerala.",
+        time: "September to March",
+        place: [
+            "Sree Padmanabhaswamy Temple", "Francis CSI Church", "Paradesi Synagogue", "Eravikulam National Park", "Varkala Beach", "Athirappilly Waterfalls"
+        ],
+        conclusion: "If you are planning India holiday packages in the state, then you must not miss out on its lip-smacking cuisine as well. Check your holiday tour packages and book accordingly."
+    },
+    {
+        title: "Kashmir",
+        description: "For decades, the Kashmir valley has attracted tourists from all over the world. If you can't plan a vacation on your own, you should check out India tours for Kashmir to help you with an unforgettable holiday. With the right all India tour packages, you can discover lush green valleys, snow-covered peaks and gorgeous wildlife. Your trip packages must include the Chenab, Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind handicrafts for your loved ones.",
+        time: "March to August",
+        place: [
+            "Gulmarg",
+            "Srinagar",
+            "Dal Lake",
+            "Sonamarg",
+            "Indira Gandhi Tulip Garden"
+        ],
+        conclusion: "These places should be included in the best tour packages for Kashmir. Find travel packages to suit all needs and you can also find exquisite honeymoon packages, since Kashmir is an ethereal destination for a picture-perfect Indian honeymoon."
+    },
+    {
+        title: "Rajasthan",
+        description: "If you are looking for mesmerising India tours, then Rajasthan is undoubtedly your destination of choice. From its sprawling forts and historical landmarks to its signature architecture, beautiful lakes and rich culinary traditions, the state is a must-try for the best tour packages in the country. Your trip packages should include visits to several historical monuments.",
+        time: "November to February",
+        place: [
+            "Jaipur",
+            "Udaipur",
+            "Chittor",
+            "Jodhpur",
+            "Jaisalmer",
+            "Mount Abu"
+        ],
+        conclusion: "When in Rajasthan, make sure that your travel packages give you ample time for some local shopping and dining. Feast on delicacies like Dal Baati Churma and Laal Maas during your Rajasthan tours."
+    },
+    {
+        title: "Sikkim",
+        description: "If you are looking for an Indian destination that is fit for a world tour package, then look no further than Sikkim. You can plan amazing India tours to this mountain marvel, which is home to the country's highest peak, Kanchenjunga. It is certainly a great destination for quality international tour packages. Check out Sikkim tour packages for a trip to this charming Indian state.",
+        time: "March to May",
+        place: [
+            "Gangtok",
+            "Nathu La Pass",
+            "Tsomgo Lake",
+            "Rumtek Monastery"
+        ]
+    },
+    {
+        title: "Shimla",
+        description: "Shimla, the Queen of the Hills, is the stuff that dreamy India tours are made of! Shimla is a great destination for international honeymoon packages, with its pristine landscape, mountains, greenery and romantic weather. A Shimla tour also means checking out the delightful cafes and eateries here.",
+        time: "May to June/December to January",
+        place: [
+            "The Ridge",
+            "Green Valley",
+            "Mall Road",
+            "Jakhoo Hill"
+        ]
+    },
+    {
+        title: "Uttarakhand",
+        description: "There are many India tours which keep Uttarakhand at the forefront and why not? The state is blessed with unmatched natural beauty. Find Uttarakhand tour packages covering several popular destinations. The state offers the right mix of spirituality, trekking, adventure, beautiful mountain landscapes and welcoming locals.",
+        time: "March to April/September to October",
+        place: [
+            "Dehradun",
+            "Mussoorie",
+            "Nainital",
+            "Auli",
+            "Rishikesh"
+        ]
+    },
+    {
+        title: "Ooty",
+        description: "Those looking for soothing India tours may also consider Ooty. Your Ooty tour should include some of the region’s signature attractions. Ooty is also famous for its tea and coffee plantations. It is also one of the top choices for international honeymoon packages.",
+        time: "October to June",
+        place: [
+            "Ooty Botanical Garden",
+            "Emerald Lake",
+            "Ooty Lake",
+            "Doddabetta Peak",
+            "Kalhatty Waterfalls",
+            "Deer Park"
+        ]
+    },
+    {
+        title: "Nainital",
+        description: "India tours are also incomplete without a trip to beautiful Nainital. This resort town in Uttarakhand lies at 2,000 meters above sea level. Enjoy the cable car rides as part of your Nainital tour package along with the stunning views of Nanda Devi (the highest mountain peak in Uttarakhand) in Nainital.",
+        time: "March to June",
+        place: [
+            "Nainital Lake",
+            "Naina Devi Hindu Temple",
+            "Snow View Observation Point"
+        ]
+    },
+    {
+        title: "Manali",
+        description: "Manali is synonymous with scintillating India tours, encompassing romantic honeymoons, camping, hiking, skiing at the Solang Valley and trekking at the Parvati Valley. It is also famous for rafting, paragliding and other adventure activities. The snow-capped mountains, a raft of popular eateries and cafes and of course, its uniquely vibrant nightlife make a Manali trip worthwhile.",
+        time: "March to June",
+        place: ["Hadimba Temple", "Museum of Himachal Culture & Folk Art", "Van Vihar National Park", "Jogini Waterfall", "Solang Valley"],
+    },
+]

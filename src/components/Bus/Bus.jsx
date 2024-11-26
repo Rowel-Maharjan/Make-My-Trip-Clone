@@ -4,6 +4,7 @@ import { busInfo, VisitingArea, FooterOffering } from './bus.config';
 import Form from '../form';
 import VisitingPlaces from '../VisitingPlaces';
 import Offerings from '../Offerings';
+import About from './About';
 
 
 const Bus = () => {
@@ -57,6 +58,7 @@ const Bus = () => {
       <div className='w-[1200px]'>
         <Offerings offerings={FooterOffering} />
       </div>
+      <About />
     </>
   );
 };

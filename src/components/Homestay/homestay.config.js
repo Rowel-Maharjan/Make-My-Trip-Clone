@@ -162,3 +162,18 @@ export const FooterOffering = [
     }
 
 ]
+
+export const aboutData = [
+    {
+        title: "Why Book Hotels on the Country's Best Travel Site?",
+        description: "Planning a vacation or business trip, and haven't found a hotel yet? Then use our web portal to find a hotel, which suits you in every way. The best travel site in India, Makemytrip has the largest database of hotels in the country and outside. Our user-friendly website makes online hotel booking an easy task, which can be completed in mere minutes."
+    },
+    {
+        title: "How to book hotels on Makemytrip.com?",
+        description: "Now, suppose you are travelling to Goa. All you have to do is click on the 'Hotels' tab on the homepage, and press the 'Domestic' button. After typing Goa under the 'I WANT TO GO' header, select your option. Then, enter the check-in and check-out dates, and tell us the number of adults and children, for whom the booking is to be made. On clicking the 'Search Hotels' button, all the accommodation options are displayed on a single page. To make your task easier, our portal is provided with filters that you can use to narrow down your search. You can refine the results on the basis of star category, location, area, price range and even the facilities you want."
+    },
+    {
+        title: " What Makemytrip.com has in store for you?",
+        description: "We have all sorts of hotels, ranging from luxury to cheap, so whatever be your requirement, you will get the accommodation. When you find the hotel of your choice, just click on its name to see its detailed description. Apart from Goa, our database includes myriad properties in all holiday and business destinations in India. Our payment gateway is totally secure, so all your bank details are safe. A smooth transfer process means that making payment is as swift as searching the hotel. So, whether you are looking for budget or upscale hotels in Delhi, Shimla, Mumbai, Chennai or any other destination, visit Makemytrip, and get the best deal."
+    },
+];
