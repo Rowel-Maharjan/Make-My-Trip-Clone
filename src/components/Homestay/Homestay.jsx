@@ -5,6 +5,7 @@ import { useForm } from 'react-hook-form';
 import VisitingPlaces from '../VisitingPlaces';
 import Offerings from '../Offerings';
 import About from './About';
+import OffersContainer from '../OffersContainer';
 
 const Homestay = () => {
   const { handleSubmit } = useForm();
@@ -45,8 +46,8 @@ const Homestay = () => {
         <VisitingPlaces VisitingPlaces={VisitingArea} />
       </div>
 
-      <div className='w-[1200px] flex bg-white py-10 px-10 -top-12 rounded-xl custom-shadow mb-11'>
-        Here
+      <div className='mt-10'>
+        <OffersContainer />
       </div>
       <div className='w-[1200px]'>
         <Offerings offerings={FooterOffering} />
