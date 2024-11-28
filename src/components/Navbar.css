@@ -53,3 +53,75 @@
 .icon-cabs.active {
     background-position: -110px -122px;
 }
+
+
+
+.icons-small {
+    background-image: url('../assets/NavbarIcons.png');
+    background-size: 156px 240px;
+    display: inline-block;
+}
+
+.icon-small-hotels {
+    background-position: -36.5px 0px;
+    width: 21.5px;
+    height: 22px;
+}
+
+.icon-small-hotels.active {
+    background-position: -37.5px -25px;
+}
+
+.icon-small-homestay {
+    background-position: -34px -50px;
+    width: 26.4px;
+    height: 22px;
+}
+
+.icon-small-homestay.active {
+    background-position: -33.59px -73px;
+}
+
+.icon-small-holidays {
+    background-position: -65px -2.2px;
+    width: 25px;
+    height: 22px;
+}
+
+.icon-small-holidays.active {
+    background-position: -65px -26px;
+}
+
+.icon-small-bus {
+    background-position: -126px -1.2px;
+    width: 25.8px;
+    height: 22px;
+}
+
+.icon-small-bus.active {
+    background-position: -125px -25px;
+}
+
+.icon-small-cabs {
+    background-position: -66px -49px;
+    width: 23.4px;
+    height: 22px;
+}
+
+.icon-small-cabs.active {
+    background-position: -66px -73px;
+}
+
+
+
+.iconMy {
+    background-image: url('../assets/icons.png');
+    background-size: 200px 700px;
+    display: inline-block;
+}
+
+.iconMy-myIconWhite {
+    background-position: -67px -489px;
+    width: 23px;
+    height: 22px;
+}
