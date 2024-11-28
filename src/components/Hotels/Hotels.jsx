@@ -17,7 +17,7 @@ import image1 from "../../assets/luxeProperties.png";
 import image2 from "../../assets/Luxevilla.jpg";
 import image3 from "../../assets/Luxeinternational.jpg";
 import "../../GradientText.css";
-import OfferList from "../OfferList";
+import OffersContainer from "../OffersContainer";
 import About from "./About";
 
 const Hotels = () => {
@@ -219,22 +219,8 @@ const Hotels = () => {
           </div>
         </div>
       </div>
-
-      {/* Offer Container */}
-      <div className="w-[1200px] relative bg-white pt-[25px] pb-[40px] px-[40px] -top-12 rounded-xl mb-11 shadow-2xl h-auto">
-        <div className="flex items-center gap-6">
-          <h1 className="text-[32px] lato-black mr-3">Offers</h1>
-          <p className="text-gray-600">Hotels</p>
-          <p className="text-gray-600">All Offers</p>
-          <p className="text-gray-600">Flights</p>
-          <p className="text-gray-600">Holidays</p>
-          <p className="text-gray-600">Trains</p>
-          <p className="text-gray-600">Cabs</p>
-          <p className="text-gray-600">Bank Offers</p>
-        </div>
-        <div>
-          <OfferList />
-        </div>
+      <div>
+        <OffersContainer />
       </div>
 
       {/* Visiting Places */}
