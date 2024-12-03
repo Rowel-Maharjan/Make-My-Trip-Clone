@@ -8,9 +8,9 @@ const OfferList = ({ page, activeCategory }) => {
     activeCategory === "All Offers"
       ? offers
       : offers.filter(
-          (offer) =>
-            offer.category.toLowerCase() === activeCategory.toLowerCase()
-        );
+        (offer) =>
+          offer.category.toLowerCase() === activeCategory.toLowerCase()
+      );
 
   const total = offers.length;
 

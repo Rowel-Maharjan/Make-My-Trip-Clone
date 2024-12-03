@@ -41,7 +41,7 @@ const Navbar = () => {
         return <span className={`icons-small icon-small-${type} mb-2 ${((location.pathname === pathname) || (location.pathname === '/' && type === "hotels")) && 'active'}`} />;
     };
     const IconMY = ({ type }) => {
-        return <span className={`iconMy text-green-200 iconMy-${type} `} />;
+        return <span className={`iconMy text-green-200 iconMy-${type} inline-block absolute top-1 left-1`} />;
     };
 
     const [isStickyVisible, setIsStickyVisible] = useState(false);
@@ -106,10 +106,13 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className='flex items-center gap-5'>
-                    <div className='flex items-center gap-2 bg-gradient-to-r from-[#53b2fe] to-[#065af3] py-2 pl-2 pr-3 rounded-md cursor-pointer'>
-                        <IconMY type="myIconWhite" />
-                        <div className='flex items-center justify-between' >
-                            <div className='text-[11px] leading-3'>Login or Create Account </div>
+                    <div className='flex items-center gap-2 cursor-pointer'>
+                        <span className='w-6 h-6 rounded-full relative bg-gradient-to-r from-[#ace143] to-[#219393]'>
+                            <IconMY type="myIconWhite" />
+                        </span>
+                        <div className='flex flex-col justify-between' >
+                            <div className='text-[12px] font-bold leading-3'>Login or</div>
+                            <div className='text-[12px] font-bold leading-3'>Create Account </div>
                         </div>
                     </div>
                     <div className='cursor-pointer'>

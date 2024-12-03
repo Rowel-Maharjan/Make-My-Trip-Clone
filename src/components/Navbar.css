@@ -115,13 +115,13 @@
 
 
 .iconMy {
-    background-image: url('../assets/icons.png');
-    background-size: 200px 700px;
+    background-image: url('../assets/NavbarIcons.png');
+    background-size: 260px 400px;
     display: inline-block;
 }
 
 .iconMy-myIconWhite {
-    background-position: -67px -489px;
-    width: 23px;
-    height: 22px;
+    background-position: -177px -350px;
+    width: 20px;
+    height: 20px;
 }
