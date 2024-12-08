@@ -31,7 +31,7 @@ const NavbarIcons = [
     },
 ]
 
-const Navbar = () => {
+const Navbar = ({ isDialogOpen, setIsDialogOpen }) => {
     const navigate = useNavigate()
     const location = useLocation()
     const Icon = ({ type, pathname }) => {
@@ -42,6 +42,10 @@ const Navbar = () => {
     };
     const IconMY = ({ type }) => {
         return <span className={`iconMy text-green-200 iconMy-${type} inline-block absolute top-1 left-1`} />;
+    };
+    const toggleDialog = (event) => {
+        event.stopPropagation();
+        setIsDialogOpen(!isDialogOpen);
     };
 
     const [isStickyVisible, setIsStickyVisible] = useState(false);
@@ -106,7 +110,7 @@ const Navbar = () => {
                     ))}
                 </div>
                 <div className='flex items-center gap-5'>
-                    <div className='flex items-center gap-2 cursor-pointer'>
+                    <div onClick={toggleDialog} className='flex items-center gap-2 cursor-pointer'>
                         <span className='w-6 h-6 rounded-full relative bg-gradient-to-r from-[#ace143] to-[#219393]'>
                             <IconMY type="myIconWhite" />
                         </span>
@@ -144,6 +148,4 @@ const Navbar = () => {
 
 }
 
-
-// 008cff 
 export default Navbar
