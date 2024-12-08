@@ -17,6 +17,17 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
     const [currentSlide, setCurrentSlide] = useState(0)
     const dialogRef = useRef(null);
     const [mailType, setMailType] = useState(false)
+    const [form, setform] = useState({})
+
+    const handleChange = (e) => {
+        setform({ ...form, [e.target.name]: e.target.value })
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        console.log(form)
+        setform({})
+    }
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -163,7 +174,7 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                             {
                                 mailType ? (
                                     <>
-                                        <input placeholder='Enter Email Address' type="email" name="email" id="email" className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10 appearance-none" />
+                                        <input placeholder='Enter Email Address' type="email" name="email" id="email" onChange={handleChange} value={form.email ? form.email : ""} className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10 pl-2 appearance-none" />
                                     </>
                                 ) : (
                                     <>
@@ -171,19 +182,19 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                                         <div className='text-[#4a4a4a] text-sm font-bold flex items-center gap-1 mr-1'>
                                             +977
                                         </div>
-                                        <input placeholder='Enter Mobile Number' type="number" name="phone" id="phone" className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10  appearance-none" />
+                                        <input placeholder='Enter Mobile Number' type="number" name="phone" id="phone" onChange={handleChange} value={form.phone ? form.phone : ""} className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10  appearance-none" />
                                     </>
                                 )
                             }
 
                         </div>
                         <div className='w-full mt-4'>
-                            <button className='text-white w-full rounded-full py-2 bg-blue-800 font-bold' type="submit">CONTINUE</button>
+                            <button onClick={handleSubmit} className='text-white w-full rounded-full py-2 bg-blue-800 font-bold' type="submit">CONTINUE</button>
                         </div>
 
                         {
                             mailType && (
-                                <div onClick={() => setMailType(false)} className='text-center mt-5 cursor-pointer font-black text-sm text-[#008cff]'>
+                                <div onClick={() => { setMailType(false); setform({}) }} className='text-center mt-5 cursor-pointer font-black text-sm text-[#008cff]'>
                                     Login/Signup With Mobile
                                 </div>
                             )
@@ -206,7 +217,7 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                                 <img className='w-4 h-4' src={google} alt="Google" />
                             </div>
                             {
-                                !mailType && <img onClick={() => setMailType(true)} className='w-10 h-10 cursor-pointer' src={mail} alt="Mail" />
+                                !mailType && <img onClick={() => { setMailType(true); setform({}) }} className='w-10 h-10 cursor-pointer' src={mail} alt="Mail" />
                             }
                         </div>
                     </div>
