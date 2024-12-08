@@ -27,3 +27,35 @@
     width: 23px;
     height: 22px;
 }
+
+.loginIcon {
+    background-image: url('../assets/loginIcons.png');
+    background-size: 150px 70px;
+    display: block;
+}
+
+.loginIcon-flight {
+    background-position: 0 0;
+    width: 33px;
+    height: 26px;
+}
+
+.loginIcon-hotel {
+    background-position: -70px 0;
+    width: 33px;
+    height: 24px;
+}
+
+.loginIcon-train {
+    background-position: -40px 0;
+    width: 33px;
+    height: 34px;
+}
+
+
+
+#phone::-webkit-outer-spin-button,
+#phone::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

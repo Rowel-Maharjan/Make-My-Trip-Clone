@@ -9,6 +9,7 @@ import Hotels from './components/Hotels/Hotels'
 import Layout from './components/Layout'
 import React from 'react';
 
+
 function App() {
   return (
     <>
