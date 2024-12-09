@@ -11,6 +11,15 @@ import img_10 from "./img_10.jpg";
 import img_11 from "./img_11.jpg";
 import img_12 from "./img_12.jpg";
 import img_13 from "./img_13.jpg";
+import img_14 from "./img_14.jpg";
+import img_15 from "./img_15.jpg";
+import img_16 from "./img_16.jpg";
+import img_17 from "./img_17.jpg";
+import img_18 from "./img_18.jpg";
+import img_19 from "./img_19.jpg";
+import img_20 from "./img_20.jpg";
+import img_21 from "./img_21.jpg";
+import img_22 from "./img_22.jpg";
 
 
 export const offers = [
@@ -127,4 +136,76 @@ export const offers = [
     image: [img_13],
     category: "cabs",
   },
+  {
+    _id: "o15",
+    title: "Year-end Deal: Up to 20% OFF*",
+    description: "on Buses!",
+    image: [img_14],
+    category: "bus",
+  },
+  {
+    _id: "o16",
+    title: "Heading to a Wedding Soon?",
+    description: "Grab up to Rs.300 OFF* on Buses",
+    image: [img_15],
+    category: "bus",
+    code: "WEDDINGTRAVEL",
+  },
+  {
+    _id: "o17",
+    title: "Grab upto Rs4000 OFF*",
+    description: "on Flights, Hotels, Holiday Packages, Buses, & Cabs!",
+    image: [img_19],
+    category: "hotels"  ,
+  },
+  {
+    _id: "o18",
+    title: "Year-end Deal: Up to 35% OFF*",
+    description: "on International Hotels!",
+    image: [img_16],
+    category: "hotels",
+  },
+  {
+    _id: "o19",
+    title: "Year-end Deal: Up to 35% OFF*",
+    description: "on International Hotels!",
+    image: [img_17],
+    category: "hotels",
+  },
+  {
+    _id: "o20",
+    title: "Year-end Deal: Flat 5% OFF*",
+    description: "on Airport Cabs!",
+    image: [img_18],
+    category: "cabs",
+  },
+  {
+    _id: "o21",
+    title: "Grab upto Rs4000 OFF*",
+    description: "on Flights, Hotels, Holiday Packages, Buses, & Cabs!",
+    image: [img_19],
+    category: "cabs",
+  },
+  {
+    _id: "o22",
+    title: "MMTBLACK SPECIAL:FLAT RS150 OFF*",
+    description: "on Bus Tickets!",
+    image: [img_20],
+    category: "bus",
+  },
+  {
+    _id: "o23",
+    title: "Make Your Travel Dreams Come True with Up To 25% OFF*",
+    description: "on Flights, Hotels, Holiday Packages, Buses, & Cabs!",
+    image: [img_21],
+    category: "bus",
+  },
+  {
+    _id: "o24",
+    title: "Grab upto Rs4000 OFF*",
+    description: "Thecho, Pokhara, Dharan & more",
+    image: [img_22],
+    category: "bus",
+  },
+
 ];

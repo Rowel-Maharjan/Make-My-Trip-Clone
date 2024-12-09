@@ -1,26 +1,28 @@
 import React from "react";
-import { offers } from "../assets/assets.js";
+
 import OfferCard from "./OfferCard";
 
-const OfferList = ({ page, activeCategory }) => {
-  // Filter offers by the active category, or show all offers if "All Offers" is selected
-  const filteredOffers =
-    activeCategory === "All Offers"
-      ? offers
-      : offers.filter(
-        (offer) =>
-          offer.category.toLowerCase() === activeCategory.toLowerCase()
-      );
+const OfferList = ({ page, paginatedOffers, lastPageOffer, maxPages }) => {
 
-  const total = offers.length;
+  const translateValue = () => {
+    if(maxPages === 1)
+      return 0
 
-  // Paginate the offers based on the current page
-  const paginatedOffers = filteredOffers.slice(0, total);
+    if (page === maxPages - 1) {
+      if (lastPageOffer === 2 || lastPageOffer === 1)
+        return ((page - 1) * 82.2 + 24)
+      else
+        return ((page - 1) * 82.2 + 65)
+    }
+    else
+      return page * 82.2
+
+  }
 
   return (
     <div
       className="grid grid-flow-col grid-rows-2 gap-4 transition-transform duration-1000 ease-in-out w-full"
-      style={{ transform: `translateX(-${page * 87}%)` }} // Dynamically calculate slide effect
+      style={{ transform: `translateX(-${translateValue()}%)` }} // Dynamically calculate slide effect
     >
       {paginatedOffers.length > 0 ? (
         paginatedOffers.map((offer) => (
