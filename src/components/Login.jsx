@@ -165,7 +165,7 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                     </div>
 
                 </div>
-                <div className="bg-white text-black px-6 py-8 rounded-lg w-[520px] relative -ml-3 z-50 min-h-[560px] flex flex-col justify-between">
+                <form className="bg-white text-black px-6 py-8 rounded-lg w-[520px] relative -ml-3 z-50 min-h-[560px] flex flex-col justify-between">
                     <div>
                         <h2 className="text-xl text-center font-semibold mb-4">Personal Account</h2>
                         <p className="mb-1 text-[#4a4a4a] text-sm"> {mailType ? "Email" : "Mobile Number"}</p>
@@ -174,7 +174,7 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                             {
                                 mailType ? (
                                     <>
-                                        <input placeholder='Enter Email Address' type="email" name="email" id="email" onChange={handleChange} value={form.email ? form.email : ""} className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10 pl-2 appearance-none" />
+                                        <input placeholder='Enter Email Address' type="email" name="email" id="email" onChange={handleChange} required value={form.email ? form.email : ""} className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10 pl-2 appearance-none" />
                                     </>
                                 ) : (
                                     <>
@@ -182,7 +182,7 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                                         <div className='text-[#4a4a4a] text-sm font-bold flex items-center gap-1 mr-1'>
                                             +977
                                         </div>
-                                        <input placeholder='Enter Mobile Number' type="number" name="phone" id="phone" onChange={handleChange} value={form.phone ? form.phone : ""} className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10  appearance-none" />
+                                        <input placeholder='Enter Mobile Number' type="number" name="phone" id="phone" onChange={handleChange} required value={form.phone ? form.phone : ""} className="font-normal w-full focus:outline-none focus:bg-none focus:border-transparent pr-10  appearance-none" />
                                     </>
                                 )
                             }
@@ -224,7 +224,7 @@ const Login = ({ isDialogOpen, setIsDialogOpen }) => {
                     <div className='text-[12px] font-normal'>
                         By proceeding, you agree to MakeMyTrip's <span className='text-[#008cff]'>Privacy Policy</span> , <span className='text-[#008cff]'>User Agreement</span> and <span className='text-[#008cff]'>T&Cs</span>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     )

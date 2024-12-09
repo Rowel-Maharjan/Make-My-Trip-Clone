@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Header.css'
 import { ChevronDown } from 'lucide-react';
 import Login from './Login';
@@ -12,6 +12,14 @@ const Header = ({ isDialogOpen, setIsDialogOpen }) => {
     event.stopPropagation();
     setIsDialogOpen(!isDialogOpen);
   };
+
+  useEffect(() => {
+    const dialogShown = sessionStorage.getItem('dialogShown');
+    if (!dialogShown) {
+      setIsDialogOpen(true);
+      sessionStorage.setItem('dialogShown', true);
+    }
+  }, []);
 
   return (
     <div className='flex text-white items-center justify-between' >
