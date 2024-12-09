@@ -7,7 +7,7 @@ const About = () => {
             <div className='w-[1200px] mx-auto'>
                 <div className='flex'>
                     {aboutData.map((item, index) => (
-                        <div className={`flex flex-col gap-6 flex-grow w-[33%] ${index < aboutData.length - 1 ? 'mr-11' : ''}`}>
+                        <div key={index} className={`flex flex-col gap-6 flex-grow w-[33%] ${index < aboutData.length - 1 ? 'mr-11' : ''}`}>
                             <div className='text-base font-bold'>
                                 {item.title}
                             </div>

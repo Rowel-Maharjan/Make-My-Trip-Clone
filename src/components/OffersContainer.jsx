@@ -8,6 +8,7 @@ const OffersContainer = () => {
   const [activeTab, setActiveTab] = useState("All Offers"); // Current active category
   const [page, setPage] = useState(0); // Current page number for pagination
   const [lastPageOffer, setLastPageOffer] = useState()
+  const [reorderedTabs, setReorderedTabs] = useState([]);
 
   const tabs = [
     "All Offers",
@@ -19,12 +20,15 @@ const OffersContainer = () => {
   ];
 
   useEffect(() => {
-    const currentTab = location.pathname.slice(1,).charAt(0).toUpperCase() + location.pathname.slice(2,);  // Extract category from pathname
+    let currentTab = location.pathname.slice(1,).charAt(0).toUpperCase() + location.pathname.slice(2,);  // Extract category from pathname
     if (tabs.includes(currentTab)) {
       setActiveTab(currentTab);  // Set the active tab to match the category in the pathname
     } else {
-      setActiveTab("All Offers");  // Default to "All Offers" if no match
+      setActiveTab("Hotels");  // Default to "All Offers" if no match
     }
+    if(currentTab == 'Homestays')
+      currentTab = "Hotels"
+    setReorderedTabs([currentTab, ...tabs.filter(tab => tab !== currentTab)]);
   }, [location.pathname]);
 
   // Filter offers by the active category, or show all offers if "All Offers" is selected
@@ -59,8 +63,6 @@ const OffersContainer = () => {
   const handleRightToggle = () => {
     setPage((prevPage) => prevPage + 1);
   };
-
-  const reorderedTabs = [activeTab, ...tabs.filter(tab => tab !== activeTab)];
 
   return (
     <div className="w-[1200px] relative bg-white pt-[25px] pb-[40px] pl-[40px] -top-12 rounded-xl mb-11 shadow-2xl h-[533.4px] overflow-hidden">
