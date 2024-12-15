@@ -19,8 +19,10 @@ import image3 from "../../assets/Luxeinternational.jpg";
 import "../../GradientText.css";
 import OffersContainer from "../OffersContainer";
 import About from "./About";
+import { useNavigate } from "react-router-dom";
 
 const Hotels = () => {
+  const navigate = useNavigate()
   const { handleSubmit } = useForm();
   const [hotelActiveTab, setHotelActiveTab] = useState("Upto 4 Rooms");
 
@@ -56,8 +58,10 @@ const Hotels = () => {
   };
 
   const onSubmit = () => {
-    if (hotelActiveTab === "Upto 4 Rooms") console.log(formDataA);
-    else console.log(formDataB);
+    if (hotelActiveTab === "Upto 4 Rooms")
+      navigate("hotel-listing", { state: formDataA });
+    else
+      navigate("hotel-listing", { state: formDataB });
   };
 
   return (
@@ -71,15 +75,15 @@ const Hotels = () => {
                 key={roominfo.id}
                 onClick={() => setHotelActiveTab(roominfo.value)}
                 className={`flex cursor-pointer items-center p-1 ${roominfo.value === hotelActiveTab
-                    ? "bg-[#eaf5ff] rounded-full"
-                    : ""
+                  ? "bg-[#eaf5ff] rounded-full"
+                  : ""
                   }`}
               >
                 <RadioGroupItem value={roominfo.value} id={roominfo.id} />
                 <Label
                   className={`cursor-pointer pl-2 font-normal text-sm text-[#4a4a4a] ${roominfo.value === hotelActiveTab
-                      ? "font-bold text-black"
-                      : ""
+                    ? "font-bold text-black"
+                    : ""
                     }`}
                   htmlFor={roominfo.id}
                 >

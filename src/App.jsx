@@ -8,6 +8,7 @@ import Homestay from './components/Homestay/Homestay'
 import Hotels from './components/Hotels/Hotels'
 import Layout from './components/Layout'
 import React from 'react';
+import HotelListing from './components/Hotels/HotelListing'
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='bus' element={<Bus />} ></Route>
           <Route path='cabs' element={<Cabs />} ></Route>
         </Route>
+        <Route path='hotels/hotel-listing' element={<HotelListing />} ></Route>
         <Route path='*' element={<ErrorPage />} />
       </Routes>
     </>

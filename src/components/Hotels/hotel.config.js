@@ -45,8 +45,6 @@ export const hotelRoomValue = [
         title: "Rooms & Guests",
         ChevronDown: true,
         roomAndGuest: true,
-        rooms: 2,
-        adults: 5
     },
     {
         height: "90px",
