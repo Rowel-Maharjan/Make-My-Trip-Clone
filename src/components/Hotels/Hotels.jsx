@@ -59,9 +59,9 @@ const Hotels = () => {
 
   const onSubmit = () => {
     if (hotelActiveTab === "Upto 4 Rooms")
-      navigate("hotel-listing", { state: formDataA });
+      navigate("/hotels/hotel-listing", { state: formDataA });
     else
-      navigate("hotel-listing", { state: formDataB });
+      navigate("/hotels/hotel-listing", { state: formDataB });
   };
 
   return (
