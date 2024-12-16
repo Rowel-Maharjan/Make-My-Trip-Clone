@@ -274,5 +274,152 @@ export const aboutData = [
     },
 ];
 
+export const sortby = [
+    {
+        name: "Popular",
+        value: "popular"
+    },
+    {
+        name: "User Rating",
+        subname: "(Highest First)",
+        value: "userrating"
+    },
+    {
+        name: "Price",
+        subname: "(Highest First)",
+        value: "priceHightoLow"
+    },
+    {
+        name: "Price",
+        subname: "(Lowest First)",
+        value: "priceLowtoHigh"
+    },
+]
+
+export const suggestedForYou = [
+    {
+        name: "Early Bird Deals",
+        value: "earlybirddeals"
+    },
+    {
+        name: "5 Star",
+        value: "5star"
+    },
+    {
+        name: "Resorts",
+        value: "resorts"
+    },
+    {
+        name: "Beachfront Properties",
+        value: "beachfrontproperties"
+    },
+    {
+        name: "Free Cancellation",
+        value: "freecancellation"
+    },
+    {
+        name: "Villas",
+        value: "villas"
+    }
+]
+
+export const pricepernight = [
+    {
+        name: "Rs0 - Rs3000",
+        value: "rs0-rs3000"
+    },
+    {
+        name: "Rs3000 - Rs5500",
+        value: "rs3000-rs5500"
+    },
+    {
+        name: "Rs5500 - Rs9000",
+        value: "rs5500-rs9000"
+    },
+    {
+        name: "Rs9000 - Rs12500",
+        value: "rs9000-rs12500"
+    },
+    {
+        name: "Rs12500 - Rs15000",
+        value: "rs12000-rs15000"
+    },
+    {
+        name: "Rs15000 - Rs30000",
+        value: "rs15000-rs30000"
+    },
+    {
+        name: "Rs3000+",
+        value: "rs3000+"
+    },
+]
+
+export const mmtLuxeSelections = [
+    {
+        name: "MMT Luxe Selections",
+        label: "mmtluxeselections"
+    }
+]
+
+export const starCategory = [
+    {
+        name: "3 Star",
+        value: "3star"
+    },
+    {
+        name: "4 Star",
+        value: "4star"
+    },
+    {
+        name: "5 Star",
+        value: "5star"
+    },
+]
+
+export const userRating = [
+    {
+        name: "Excellent:4.2+",
+        value: "excellent"
+    },
+    {
+        name: "Very Good:3.5+",
+        value: "verygood"
+    },
+    {
+        name: "Good:3+",
+        value: "good"
+    }
+]
+
+export const propertyType = [
+    {
+        name: "Apartment",
+        value: "apartment"
+    },
+    {
+        name: "Villa",
+        value: "villa"
+    },
+    {
+        name: "Hotel",
+        value: "hotel"
+    },
+    {
+        name: "Resort",
+        value: "resort"
+    },
+    {
+        name: "Cottage",
+        value: "cottage"
+    },
+    {
+        name: "Guest House",
+        value: "guesthouse"
+    },
+    {
+        name: "Camp",
+        value: "camp"
+    }
+]
 
 
